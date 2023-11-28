@@ -1,0 +1,44 @@
+.our-advantages {
+  padding-top: 52px;
+}
+.our-advantages-container {
+}
+
+.our-advantages-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 28px;
+}
+.our-advantages-list {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url(../img/Advantages-mobile-1x.jpg), lightgray 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+
+  padding: 87px 0;
+}
+
+.our-advantages-item {
+  color: var(--primary-light);
+  padding-left: 30px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-weight: 400;
+  background: var(--primary-blue);
+}
+
+.our-advantages-item:not(:last-child) {
+  margin-bottom: 28px;
+}
+.our-advantages-item::before {
+  content: '★';
+  color: var(--primary-light);
+  margin-right: 8px;
+  font-size: 18px;
+}

@@ -1,0 +1,21 @@
+.about-us {
+  padding-top: 52px;
+}
+.about-container {
+}
+
+.about-title {
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+}
+.about-text-1 {
+  margin-top: 28px;
+  color: var(--primary-dark);
+  font-size: 16px;
+}
+.about-text-2 {
+  margin-top: 4px;
+  color: var(--primary-dark);
+  font-size: 16px;
+}

@@ -1,0 +1,60 @@
+:root {
+  --primary-font-family: 'Montserrat', sans-serif;
+  --primary-blue: #5b86a1;
+  --primary-black: #1b1d1b;
+  --primary-dark: #202321;
+  --primary-light: #f7fbfb;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  color: var(--primary-black);
+  font-family: var(--primary-font-family);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 335px;
+  padding: 0 32px;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+button {
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding: 0 135px;
+  }
+}

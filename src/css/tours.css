@@ -1,0 +1,47 @@
+.upcoming-tours {
+  padding-top: 52px;
+}
+.tours-container {
+}
+
+.tours-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.tours-list {
+}
+
+.tours-item {
+}
+
+.tours-item-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 28px;
+}
+
+.tours-item-text {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+
+.tours-item-button {
+  color: var(--primary-light);
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: flex;
+  width: 271px;
+  height: 53px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  background-color: var(--primary-blue);
+  border: none;
+}
