@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/Carpatians2/",
+    "build": "vite build --base=/Carpathians/",
     "preview": "vite preview"
   },
   "devDependencies": {
