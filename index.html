@@ -7,77 +7,656 @@
     <title>Vanilla App Template</title>
     
     <script type="module" crossorigin src="/Carpatians2/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Carpatians2/assets/index-10c40100.css">
+    <link rel="modulepreload" crossorigin href="/Carpatians2/assets/vendor-5954de68.js">
+    <link rel="stylesheet" href="/Carpatians2/assets/vendor-daca7cbf.css">
+    <link rel="stylesheet" href="/Carpatians2/assets/index-11b5e448.css">
   </head>
   <body>
     <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/Carpatians2/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
+  <div class="header-container container">
+    <a class="header-logo-link link" href="./index.html" title="Carpathians">
+      <svg class="header-logo-icon" width="40" height="40">
+        <use href="../img/sprite.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <!-- <nav class="header-nav">
+      <ul class="header-nav-list list">
+        <li class="header-nav-item">
+          <a class="link" href="#about-us">About us</a>
         </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
+        <li class="header-nav-item">
+          <a class="link" href="#tours">Tours</a>
+        </li>
+        <li class="header-nav-item">
+          <a class="link" href="#reviews">Reviews</a>
+        </li>
+        <li class="header-nav-item">
+          <a class="link" href="#gallery">Gallery</a>
+        </li>
+        <li class="header-nav-item">
+          <a class="link" href="#contacts">Contacts</a>
         </li>
       </ul>
-    </div>
+      <ul class="header-social-list list">
+        <li class="header-social-item">
+          <a
+            class="header-social-link link"
+            href="https://t.me/junior_developer_ua"
+            title="Telegram"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="header-social-icon" width="40" height="40">
+              <use href="images/sprite.svg#icon-telegram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-social-item">
+          <a
+            class="header-social-link link"
+            href="https://www.instagram.com/goitclub/"
+            title="Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="header-social-icon" width="40" height="40">
+              <use href="images/sprite.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-social-item">
+          <a
+            class="header-social-link link"
+            href="http://www.facebook.com/goITclub/"
+            title="Fasebook"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="header-social-icon" width="40" height="40">
+              <use href="images/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav> -->
+    <!-- <div class="header-burger">
+<span class="burger"></span>
+</div> -->
+    <div class="header-burger">
+      <input id="mobile-menu-toggle" type="checkbox" />
+      <label class="mobile-menu-btn" for="mobile-menu-toggle">
+        <span class="burger"></span>
+      </label>
 
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/Carpatians2/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
+      <!-- <ul class="mobile-menu-list list">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="#about-us">About us</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="#tours">Tours</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="#reviews">Reviews</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="#gallery">Gallery</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="#contacts">Contacts</a>
+        </li>
+      </ul> -->
+    </div>
+  </div>
+</header>
+
+    <main>
+      <section class="hero">
+  <div class="hero-container container">
+    <h1 class="hero-title">TOURS TO THE CARPATHIANS FROM LVIV</h1>
+    <p class="hero-text">
+      Journeys to the very heart of the Carpathians for those who want a real
+      reboot
+    </p>
+    <button class="hero-button" type="button">BOOK A TOUR</button>
+  </div>
+</section>
+
+      <section class="about-us">
+  <div class="about-container container">
+    <h2 class="about-title" id="about-us">About us</h2>
+    <p class="about-text-1">
+      Travel is our life. We have been organizing tours to the Carpathians since
+      2007 and have never been bored for a single day. The Carpathians are many
+      interesting and unexplored places that are worth visiting and showing them
+      to others.
+    </p>
+    <p class="about-text-2">
+      Coming to the Carpathians will make you forget about the polluted, noisy
+      world and enjoy untouched nature. From picturesque forests to clean rivers
+      and lakes and Carpathian streams between the mountains, which offer
+      magical landscapes and allow you to forget about all problems and
+      unnecessary thoughts.
+    </p>
+  </div>
+</section>
+
+      <section class="our-advantages">
+  <div class="our-advantages-container container">
+    <h2 class="our-advantages-title">Our advantages</h2>
+    <ul class="our-advantages-list list">
+      <li class="our-advantages-item">author's tours</li>
+      <li class="our-advantages-item">іndividual approach</li>
+      <li class="our-advantages-item">affordable prices</li>
+      <li class="our-advantages-item">comfortable transfer</li>
+      <li class="our-advantages-item">professional guides</li>
+      <li class="our-advantages-item">accommodation in hotels from 3+ *</li>
+    </ul>
+  </div>
+</section>
+
+      <section class="upcoming-tours">
+  <div class="tours-container container">
+    <h2 class="tours-title" id="tours">Upcoming tours</h2>
+    <div class="swiper">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          <picture>
+            <source
+              srcset="
+                ../img/tour/carpatians-desktop-1x.jpg 1x,
+                ../img/tour/carpatians-desktop-2x.jpg 2x
+              "
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="
+                ../img/tour/carpatians-tablet-1x.jpg 1x,
+                ../img/tour/carpatians-tablet-2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ../img/tour/carpatians-mobile-1x.jpg 1x,
+                ../img/tour/carpatians-mobile-2x.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              src="../img/tour/carpatians-mobile-1x.jpg"
+              alt="carpatians"
+              width="338"
+              height="311"
+            />
+          </picture>
+          <h3 class="tours-item-title">Week in Carpathians</h3>
+          <p class="tours-item-text">From UAH 9,999/person</p>
+          <button class="tours-item-button" type="button">MORE DETAILS</button>
+        </li>
+        <li class="swiper-slide">
+          <picture>
+            <source
+              srcset="
+                ../img/tour/bukovel-desktop-1x.jpg 1x,
+                ../img/tour/bukovel-desktop-2x.jpg 2x
+              "
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="
+                ../img/tour/bukovel-tablet-1x.jpg 1x,
+                ../img/tour/bukovel-tablet-2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ../img/tour/bukovel-mobile-1x.jpg 1x,
+                ../img/tour/bukovel-mobile-2x.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              src="../img/tour/bukovel-mobile-1x.jpg"
+              alt="bukovel"
+              width="338"
+              height="311"
+            />
+          </picture>
+          <h3 class="tours-item-title">Ski tour to Bukovel</h3>
+          <p class="tours-item-text">From UAH 7,499/person</p>
+          <button class="tours-item-button" type="button">MORE DETAILS</button>
+        </li>
+        <li class="swiper-slide">
+          <picture>
+            <source
+              srcset="
+                ../img/tour/hoverla-desktop-1x.jpg 1x,
+                ../img/tour/hoverla-desktop-2x.jpg 2x
+              "
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="
+                ../img/tour/hoverla-tablet-1x.jpg 1x,
+                ../img/tour/hoverla-tablet-2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ../img/tour/hoverla-mobile-1x.jpg 1x,
+                ../img/tour/hoverla-mobile-2x.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              src="../img/tour/hoverla-mobile-1x.jpg"
+              alt="hoverla"
+              width="338"
+              height="311"
+            />
+          </picture>
+          <h3 class="tours-item-title">Ascent to Hoverla</h3>
+          <p class="tours-item-text">From UAH 4,499/person</p>
+          <button class="tours-item-button" type="button">MORE DETAILS</button>
+        </li>
+      </ul>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
   </div>
 </section>
+
+      <section class="reviews">
+  <h2 id="reviews">Reviews</h2>
+  <ul class="list">
+    <li>
+      <h3>Maria</h3>
+      <p>
+        It was really cool! We saw everything - sun, snow, rain, fog! It's very
+        exciting and interesting, you won't regret it - it's worth going and
+        seeing everything with your own eyes. Everything is organized
+        at the highest level.
+      </p>
+    </li>
+    <li>
+      <h3>Ostap</h3>
+      <p>
+        Good organization, everything went smoothly. Friendly guide Taras told
+        interesting facts about the area and customs throughout the tour.
+      </p>
+    </li>
+  </ul>
+</section>
+
+      <section class="gallery">
+  <h2 id="gallery" class="gallery-title">Gallery</h2>
+  <ul class="gallery-list list">
+    <li class="gallery-irem">
+      <picture>
+        <source
+          srcset="
+            ../img/gallery/gallery1-desktop-1x.jpg 1x,
+            ../img/gallery/gallery1-desktop-2x.jpg 2x
+          "
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="
+            ../img/gallery/gallery1-tablet-1x.jpg 1x,
+            ../img/gallery/gallery1-tablet-2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ../img/gallery/gallery1-mobile-1x.jpg 1x,
+            ../img/gallery/gallery1-mobile-2x.jpg 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img src="../img/gallery/gallery1-mobile-1x.jpg" alt="nature1" />
+      </picture>
+    </li>
+    <li class="gallery-irem">
+      <picture>
+        <source
+          srcset="
+            ../img/gallery/gallery2-desktop-1x.jpg 1x,
+            ../img/gallery/gallery2-desktop-2x.jpg 2x
+          "
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="
+            ../img/gallery/gallery2-tablet-1x.jpg 1x,
+            ../img/gallery/gallery2-tablet-2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ../img/gallery/gallery2-mobile-1x.jpg 1x,
+            ../img/gallery/gallery2-mobile-2x.jpg 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img src="../img/gallery/gallery2-mobile-1x.jpg" alt="nature2" />
+      </picture>
+    </li>
+    <li class="gallery-irem">
+      <picture>
+        <source
+          srcset="
+            ../img/gallery/gallery3-desktop-1x.jpg 1x,
+            ../img/gallery/gallery3-desktop-2x.jpg 2x
+          "
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="
+            ../img/gallery/gallery3-tablet-1x.jpg 1x,
+            ../img/gallery/gallery3-tablet-2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ../img/gallery/gallery3-mobile-1x.jpg 1x,
+            ../img/gallery/gallery3-mobile-2x.jpg 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img src="../img/gallery/gallery3-mobile-1x.jpg" alt="nature3" />
+      </picture>
+    </li>
+    <li class="gallery-irem">
+      <picture>
+        <source
+          srcset="
+            ../img/gallery/gallery4-desktop-1x.jpg 1x,
+            ../img/gallery/gallery4-desktop-2x.jpg 2x
+          "
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="
+            ../img/gallery/gallery4-tablet-1x.jpg 1x,
+            ../img/gallery/gallery4-tablet-2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ../img/gallery/gallery4-mobile-1x.jpg 1x,
+            ../img/gallery/gallery4-mobile-2x.jpg 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img src="../img/gallery/gallery4-mobile-1x.jpg" alt="nature4" />
+      </picture>
+    </li>
+    <li class="gallery-irem">
+      <picture>
+        <source
+          srcset="
+            ../img/gallery/gallery5-desktop-1x.jpg 1x,
+            ../img/gallery/gallery5-desktop-2x.jpg 2x
+          "
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="
+            ../img/gallery/gallery5-tablet-1x.jpg 1x,
+            ../img/gallery/gallery5-tablet-2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ../img/gallery/gallery5-mobile-1x.jpg 1x,
+            ../img/gallery/gallery5-mobile-2x.jpg 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img src="../img/gallery/gallery5-mobile-1x.jpg" alt="nature5" />
+      </picture>
+    </li>
+    <li class="gallery-irem">
+      <picture>
+        <source
+          srcset="
+            ../img/gallery/gallery6-desktop-1x.jpg 1x,
+            ../img/gallery/gallery6-desktop-2x.jpg 2x
+          "
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="
+            ../img/gallery/gallery6-tablet-1x.jpg 1x,
+            ../img/gallery/gallery6-tablet-2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ../img/gallery/gallery6-mobile-1x.jpg 1x,
+            ../img/gallery/gallery6-mobile-2x.jpg 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img src="../img/gallery/gallery6-mobile-1x.jpg" alt="nature6" />
+      </picture>
+    </li>
+    <li class="gallery-irem">
+      <picture>
+        <source
+          srcset="
+            ../img/gallery/gallery7-desktop-1x.jpg 1x,
+            ../img/gallery/gallery7-desktop-2x.jpg 2x
+          "
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="
+            ../img/gallery/gallery7-tablet-1x.jpg 1x,
+            ../img/gallery/gallery7-tablet-2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ../img/gallery/gallery7-mobile-1x.jpg 1x,
+            ../img/gallery/gallery7-mobile-2x.jpg 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img src="../img/gallery/gallery7-mobile-1x.jpg" alt="nature7" />
+      </picture>
+    </li>
+    <li class="gallery-irem">
+      <picture>
+        <source
+          srcset="
+            ../img/gallery/gallery8-desktop-1x.jpg 1x,
+            ../img/gallery/gallery8-desktop-2x.jpg 2x
+          "
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="
+            ../img/gallery/gallery8-tablet-1x.jpg 1x,
+            ../img/gallery/gallery8-tablet-2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ../img/gallery/gallery8-mobile-1x.jpg 1x,
+            ../img/gallery/gallery8-mobile-2x.jpg 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img src="../img/gallery/gallery8-mobile-1x.jpg" alt="nature8" />
+      </picture>
+    </li>
+  </ul>
+</section>
+
+      <section class="questions">
+  <h2>Do you have any questions?</h2>
+  <p>
+    You can leave your questions here and our manager will call you back within
+    10 minutes
+  </p>
+  <form class="questions-form">
+    <label class="form-label"
+      ><input type="text" name="username" placeholder="Your name*" required
+    /></label>
+    <label class="form-label"
+      ><input type="tel" name="userphone" placeholder="Phone number*" required
+    /></label>
+    <label class="form-label"
+      ><input
+        type="text"
+        name="userquestion"
+        placeholder="What would you like to know?"
+        required
+    /></label>
+    <button type="submit" disabled>CALL ME</button>
+  </form>
+</section>
+
+    </main>
+    <footer>
+  <h2 id="contacts">Contacts</h2>
+  <address class="contacts">
+    <ul class="contacts-list list">
+      <li class="contacts-item">
+        <a
+          class="contacts-link link"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://maps.app.goo.gl/iNgmkoacyuW4Mb1Y7"
+        >
+          <svg class="footer-icon" width="32" height="32">
+            <use href="../img/sprite.svg#icon-place"></use>
+          </svg>
+          Lviv, st Dorosheko, 44 k</a
+        >
+      </li>
+      <li class="contacts-item">
+        <a class="contacts-link link" target="_blank" href="tel:+380971626790">
+          <svg class="footer-icon" width="32" height="32">
+            <use href="../img/sprite.svg#icon-phone"></use>
+          </svg>
+          +38 (097) 162-67-90</a
+        >
+      </li>
+      <li class="contacts-item">
+        <a
+          class="contacts-link link"
+          target="_blank"
+          href="mailto:mandrykarpaty@gmail.com"
+        >
+          <svg class="footer-icon" width="32" height="32">
+            <use href="../img/sprite.svg#icon-email"></use>
+          </svg>
+          mandrykarpaty@gmail.com</a
+        >
+      </li>
+    </ul>
+    <p>
+      <svg class="footer-icon" width="16" height="16">
+        <use href="../img/sprite.svg#icon-copyright"></use>
+      </svg>
+      Created by LelekaSoft
+    </p>
+  </address>
+</footer>
+
+
+    <div class="modal-book">
+  <button class="modal-button" type="button">
+    <svg class="modal-btn-close" width="30" height="30">
+      <use href="../img/sprite.svg#icon-close"></use>
+    </svg>
+  </button>
+  <h2>Book a tour</h2>
+  <p>
+    You can leave your application here and our manager will call you
+    within 10 minutes
+  </p>
+  <form class="modal-form">
+    <label for=""
+      ><input
+        type="text"
+        name="username"
+        placeholder="Your name*"
+        required /></label
+    ><label for=""
+      ><input
+        type="tel"
+        name="userphone"
+        placeholder="Phone number*"
+        required /></label
+    ><label for=""
+      ><input type="checkbox" name="tour" value="sports" checked />Ascent
+      to Hoverla</label
+    ><label for=""
+      ><input type="checkbox" name="tour" value="sports" />Ski tour to
+      Bukovel</label
+    ><label for=""
+      ><input type="checkbox" name="tour" value="sports" />Week in
+      Carpathians</label
+    >
+    <button type="button">CALL ME</button>
+  </form>
+</div>
+
+    <div class="modal-choice">
+  <div>
+    <ul>
+      <li>
+        <h3>Ascent to Hoverla</h3>
+        <ul>
+          <li>1 day</li>
+          <li>Departure from Lviv</li>
+          <li>Manyava Hermitage</li>
+          <li>Manyava waterfall</li>
+          <li>Arrival to Bukovel</li>
+          <li>Check-in</li>
+          <li>Dinner</li>
+          <li>Evening by the fireplace</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Ascent to Hoverla</h3>
+        <ul>
+          <li>2 day</li>
+          <li>Breakfast</li>
+          <li>Ascent to Hoverla</li>
+          <li>Dinner</li>
+          <li>Reacretion</li>
+          <li>Sauna</li>
+          <li>Dinner</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Ascent to Hoverla</h3>
+        <ul>
+          <li>3 day</li>
+          <li>Breakfast</li>
+          <li>A walk around Bukovel</li>
+          <li>Check out from the hotel</li>
+          <li>Yaremche</li>
+          <li>Arrival in Lviv</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
 
 
     
