@@ -1,27 +1,29 @@
 .our-advantages {
   padding-top: 52px;
-}
-.our-advantages-container {
-}
 
-.our-advantages-title {
-  text-align: center;
-  font-size: 32px;
-  font-weight: 400;
-  margin-bottom: 28px;
-}
-.our-advantages-list {
-  background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.2) 0%,
-      rgba(0, 0, 0, 0.2) 100%
-    ),
-    url(../img/Advantages-mobile-1x.jpg), lightgray 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0 auto;
+  .our-advantages-container {
+  }
 
-  padding: 87px 0;
+  .our-advantages-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 28px;
+  }
+  .our-advantages-list {
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url(../img/Advantages-mobile-1x.jpg), lightgray 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    max-width: 315px;
+    margin: 0 auto;
+    padding: 87px 0;
+  }
 }
 
 .our-advantages-item {

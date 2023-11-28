@@ -44,4 +44,18 @@
   flex-shrink: 0;
   background-color: var(--primary-blue);
   border: none;
+  margin-bottom: 28px;
+}
+
+.swiper {
+}
+
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--primary-blue);
 }

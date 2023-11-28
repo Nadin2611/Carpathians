@@ -1,67 +1,113 @@
-<!-- <section class="upcoming-tours">
-        <div class="tours-container container">
-          <h2 class="tours-title" id="tours">Upcoming tours</h2>
-          <ul class="tours-list list">
-            <li class="tours-item">
-              <h3 class="tours-item-title">Week in Carpathians</h3>
-              <p class="tours-item-text">From UAH 9,999/person</p>
-              <button class="tours-item-button" type="button">
-                MORE DETAILS
-              </button>
-            </li>
-            <li class="tours-item">
-              <h3 class="tours-item-title">Ski tour to Bukovel</h3>
-              <p class="tours-item-text">From UAH 7,499/person</p>
-              <button class="tours-item-button" type="button">
-                MORE DETAILS
-              </button>
-            </li>
-            <li class="tours-item">
-              <h3 class="tours-item-title">Ascent to Hoverla</h3>
-              <p class="tours-item-text">From UAH 4,499/person</p>
-              <button class="tours-item-button" type="button">
-                MORE DETAILS
-              </button>
-            </li>
-          </ul>
-        </div>
-      </section> -->
 <section class="upcoming-tours">
   <div class="tours-container container">
     <h2 class="tours-title" id="tours">Upcoming tours</h2>
     <div class="swiper">
-      <div class="swiper-wrapper">
-        <ul class="tours-list list">
-          <li class="tours-item">
-            <div class="swiper-slide">
-              <h3 class="tours-item-title">Week in Carpathians</h3>
-              <p class="tours-item-text">From UAH 9,999/person</p>
-              <button class="tours-item-button" type="button">
-                MORE DETAILS
-              </button>
-            </div>
-          </li>
-          <li class="tours-item">
-            <div class="swiper-slide">
-              <h3 class="tours-item-title">Ski tour to Bukovel</h3>
-              <p class="tours-item-text">From UAH 7,499/person</p>
-              <button class="tours-item-button" type="button">
-                MORE DETAILS
-              </button>
-            </div>
-          </li>
-          <li class="tours-item">
-            <div class="swiper-slide">
-              <h3 class="tours-item-title">Ascent to Hoverla</h3>
-              <p class="tours-item-text">From UAH 4,499/person</p>
-              <button class="tours-item-button" type="button">
-                MORE DETAILS
-              </button>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="swiper-pagination"></div>
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          <picture>
+            <source
+              srcset="
+                ../img/tour/carpatians-desktop-1x.jpg 1x,
+                ../img/tour/carpatians-desktop-2x.jpg 2x
+              "
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="
+                ../img/tour/carpatians-tablet-1x.jpg 1x,
+                ../img/tour/carpatians-tablet-2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ../img/tour/carpatians-mobile-1x.jpg 1x,
+                ../img/tour/carpatians-mobile-2x.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              src="../img/tour/carpatians-mobile-1x.jpg"
+              alt="carpatians"
+              width="338"
+              height="311"
+            />
+          </picture>
+          <h3 class="tours-item-title">Week in Carpathians</h3>
+          <p class="tours-item-text">From UAH 9,999/person</p>
+          <button class="tours-item-button" type="button">MORE DETAILS</button>
+        </li>
+        <li class="swiper-slide">
+          <picture>
+            <source
+              srcset="
+                ../img/tour/bukovel-desktop-1x.jpg 1x,
+                ../img/tour/bukovel-desktop-2x.jpg 2x
+              "
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="
+                ../img/tour/bukovel-tablet-1x.jpg 1x,
+                ../img/tour/bukovel-tablet-2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ../img/tour/bukovel-mobile-1x.jpg 1x,
+                ../img/tour/bukovel-mobile-2x.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              src="../img/tour/bukovel-mobile-1x.jpg"
+              alt="bukovel"
+              width="338"
+              height="311"
+            />
+          </picture>
+          <h3 class="tours-item-title">Ski tour to Bukovel</h3>
+          <p class="tours-item-text">From UAH 7,499/person</p>
+          <button class="tours-item-button" type="button">MORE DETAILS</button>
+        </li>
+        <li class="swiper-slide">
+          <picture>
+            <source
+              srcset="
+                ../img/tour/hoverla-desktop-1x.jpg 1x,
+                ../img/tour/hoverla-desktop-2x.jpg 2x
+              "
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="
+                ../img/tour/hoverla-tablet-1x.jpg 1x,
+                ../img/tour/hoverla-tablet-2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ../img/tour/hoverla-mobile-1x.jpg 1x,
+                ../img/tour/hoverla-mobile-2x.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              src="../img/tour/hoverla-mobile-1x.jpg"
+              alt="hoverla"
+              width="338"
+              height="311"
+            />
+          </picture>
+          <h3 class="tours-item-title">Ascent to Hoverla</h3>
+          <p class="tours-item-text">From UAH 4,499/person</p>
+          <button class="tours-item-button" type="button">MORE DETAILS</button>
+        </li>
+      </ul>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
   </div>
 </section>
