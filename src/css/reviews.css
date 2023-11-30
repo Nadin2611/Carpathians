@@ -1,0 +1,84 @@
+.reviews {
+  padding-top: 52px;
+}
+
+.reviews-container {
+}
+
+.reviews-title {
+  color: var(--primary-black);
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.reviews-list {
+  margin-top: 28px;
+}
+
+.reviews-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 311px;
+  border: 1px solid var(--primary-blue);
+}
+
+.reviews-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.reviewers-photo-wrapper {
+  background-image: url(../img/reviews/review-mobile-1x.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 311px;
+  height: 134px;
+  flex-shrink: 0;
+}
+
+.reviewers-photo {
+  position: absolute;
+  transform: translateX(100%) translateY(100%) translateY(-20%);
+}
+
+.reviewers-name {
+  color: var(--primary-blue);
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 70px;
+}
+
+.reviews-text {
+  color: var(--primary-dark);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 16px;
+  margin-right: 35px;
+  margin-left: 35px;
+}
+
+.reviews-button {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  z-index: 1;
+  align-self: flex-end;
+  margin-bottom: 12px;
+  margin-right: 12px;
+  margin-top: 4px;
+  background-color: var(--primary-ligth);
+}
+
+.reviews-svg {
+  fill: var(--primary-blue);
+}
