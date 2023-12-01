@@ -21,7 +21,6 @@
   flex-direction: column;
   position: relative;
   width: 311px;
-  border: 1px solid var(--primary-blue);
 }
 
 .reviews-item:not(:last-child) {
@@ -81,4 +80,15 @@
 
 .reviews-svg {
   fill: var(--primary-blue);
+}
+
+.front-container {
+  position: relative;
+  border: 1px solid var(--primary-blue);
+  width: 100%;
+  height: 100%;
+}
+
+.round {
+  position: absolute;
 }

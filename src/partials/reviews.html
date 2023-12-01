@@ -3,75 +3,170 @@
     <h2 class="reviews-title" id="reviews">Reviews</h2>
     <ul class="reviews-list list">
       <li class="reviews-item">
-        <div class="reviewers-photo-wrapper">
-          <img
-            class="reviewers-photo"
-            srcset="/img/reviews/maria-1x.png 1x, /img/reviews/maria-2x.png 2x"
-            src="/img/reviews/maria-1x.png"
-            alt="Maria"
-            width="100"
-            height="100"
-          />
+        <div class="front-container">
+          <div class="reviewers-photo-wrapper">
+            <img
+              class="reviewers-photo"
+              srcset="
+                /img/reviews/maria-1x.png 1x,
+                /img/reviews/maria-2x.png 2x
+              "
+              src="/img/reviews/maria-1x.png"
+              alt="Maria"
+              width="100"
+              height="100"
+            />
+          </div>
+          <h3 class="reviewers-name">Maria</h3>
+          <p class="reviews-text">
+            It was really cool! We saw everything - sun, snow, rain, fog! It's
+            very exciting and interesting, you won't regret it - it's worth
+            going and seeing everything with your own eyes. Everything is
+            organized at the highest level.
+          </p>
+          <button class="reviews-button" type="button">
+            <svg class="reviews-svg" width="32" height="32">
+              <use href="/img/sprite.svg#icon-round"></use>
+            </svg>
+          </button>
         </div>
-        <h3 class="reviewers-name">Maria</h3>
-        <p class="reviews-text">
-          It was really cool! We saw everything - sun, snow, rain, fog! It's
-          very exciting and interesting, you won't regret it - it's worth going
-          and seeing everything with your own eyes. Everything is organized
-          at the highest level.
-        </p>
-        <button class="reviews-button" type="button">
-          <svg class="reviews-svg" width="32" height="32">
-            <use href="/img/sprite.svg#icon-round"></use>
-          </svg>
-        </button>
+        <div class="back-container">
+          <picture>
+            <source
+              srcset="
+                ../img/reviews/maria-rev-desktop-1x.jpg 1x,
+                ../img/reviews/maria-rev-desktop-2x.jpg 2x
+              "
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="
+                ../img/reviews/maria-rev-tablet-1x.jpg 1x,
+                ../img/reviews/maria-rev-tablet-2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ../img/reviews/maria-rev-mobile-1x.jpg 1x,
+                ../img/reviews/maria-rev-mobile-2x.jpg 2x
+              "
+              media="(max-width:767px)"
+            />
+            <img
+              src="../img/reviews/maria-rev-mobile-1x.jpg"
+              alt="maria-review"
+              width="311"
+              height="452"
+            />
+          </picture>
+        </div>
       </li>
       <li class="reviews-item">
-        <div class="reviewers-photo-wrapper">
-          <img
-            class="reviewers-photo"
-            srcset="/img/reviews/ostap-1x.png 1x, /img/reviews/ostap-2x.png 2x"
-            src="/img/reviews/ostap-1x.png"
-            alt="Ostap"
-            width="100"
-            height="100"
-          />
+        <div>
+          <div class="reviewers-photo-wrapper">
+            <img
+              class="reviewers-photo"
+              srcset="
+                /img/reviews/ostap-1x.png 1x,
+                /img/reviews/ostap-2x.png 2x
+              "
+              src="/img/reviews/ostap-1x.png"
+              alt="Ostap"
+              width="100"
+              height="100"
+            />
+          </div>
+          <h3 class="reviewers-name">Ostap</h3>
+          <p class="reviews-text">
+            Good organization, everything went smoothly. Friendly guide Taras
+            told interesting facts about the area and customs throughout the
+            tour.
+          </p>
+          <button class="reviews-button" type="button">
+            <svg class="reviews-svg" width="32" height="32">
+              <use href="/img/sprite.svg#icon-round"></use>
+            </svg>
+          </button>
         </div>
-        <h3 class="reviewers-name">Ostap</h3>
-        <p class="reviews-text">
-          Good organization, everything went smoothly. Friendly guide Taras told
-          interesting facts about the area and customs throughout the tour.
-        </p>
-        <button class="reviews-button" type="button">
-          <svg class="reviews-svg" width="32" height="32">
-            <use href="/img/sprite.svg#icon-round"></use>
-          </svg>
-        </button>
+        <div class="back-container">
+          <picture>
+            <source
+              srcset="
+                ../img/reviews/ostap-rev-desktop-1x.jpg 1x,
+                ../img/reviews/ostap-rev-desktop-2x.jpg 2x
+              "
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="
+                ../img/reviews/ostap-rev-tablet-1x.jpg 1x,
+                ../img/reviews/ostap-rev-tablet-2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ../img/reviews/ostap-rev-mobile-1x.jpg 1x,
+                ../img/reviews/ostap-rev-mobile-2x.jpg 2x
+              "
+              media="(max-width:767px)"
+            />
+            <img
+              src="../img/reviews/ostap-rev-mobile-1x.jpg"
+              alt="ostap-review"
+              width="311"
+              height="452"
+            />
+          </picture>
+        </div>
       </li>
-      <li class="reviews-item">
-        <div class="reviewers-photo-wrapper">
-          <img
-            class="reviewers-photo"
-            srcset="/img/reviews/anita-1x.png 1x, /img/reviews/anita-2x.png 2x"
-            src="/img/reviews/anita-1x.png"
-            alt="Anita"
-            width="100"
-            height="100"
-          />
-        </div>
+      <li class="reviews-item hidden">
+        <div>
+          <div class="reviewers-photo-wrapper">
+            <img
+              class="reviewers-photo"
+              srcset="
+                /img/reviews/anita-1x.png 1x,
+                /img/reviews/anita-2x.png 2x
+              "
+              src="/img/reviews/anita-1x.png"
+              alt="Anita"
+              width="100"
+              height="100"
+            />
+          </div>
 
-        <h3 class="reviewers-name">Anita</h3>
-        <p class="reviews-text">
-          Who is going to the mountains for the first time - this is exactly
-          the tour and the people who organize everything. Guide Makar is
-          interesting stories, selection of a route for a comfortable ascent,
-          motivation and support.
-        </p>
-        <button class="reviews-button" type="button">
-          <svg class="reviews-svg" width="32" height="32">
-            <use href="/img/sprite.svg#icon-round"></use>
-          </svg>
-        </button>
+          <h3 class="reviewers-name">Anita</h3>
+          <p class="reviews-text">
+            Who is going to the mountains for the first time - this is exactly
+            the tour and the people who organize everything. Guide Makar is
+            interesting stories, selection of a route for a comfortable ascent,
+            motivation and support.
+          </p>
+          <button class="reviews-button" type="button">
+            <svg class="reviews-svg" width="32" height="32">
+              <use href="/img/sprite.svg#icon-round"></use>
+            </svg>
+          </button>
+        </div>
+        <div>
+          <picture>
+            <source
+              srcset="
+                ../img/reviews/anita-rev-desktop-1x.jpg 1x,
+                ../img/reviews/anita-rev-desktop-2x.jpg 2x
+              "
+              media="(min-width: 1440px)"
+            />
+            <img
+              src="../img/reviews/anita-rev-desktop-1x.jpg"
+              alt="anita-review"
+              width="311"
+              height="452"
+            />
+          </picture>
+        </div>
       </li>
     </ul>
   </div>

@@ -23,3 +23,10 @@ document.addEventListener('DOMContentLoaded', function () {
     swiper.slidePrev();
   });
 });
+
+const roundButton = document.querySelector('.reviews-button');
+const backEl = document.querySelector('.back-container');
+
+roundButton.addEventListener('click', () => {
+  backEl.classList.toggle('round');
+});
