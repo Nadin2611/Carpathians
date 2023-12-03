@@ -7,9 +7,9 @@
     <title>Carpathians</title>
     
     <script type="module" crossorigin src="/Carpathians/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/Carpathians/assets/vendor-5954de68.js">
-    <link rel="stylesheet" href="/Carpathians/assets/vendor-daca7cbf.css">
-    <link rel="stylesheet" href="/Carpathians/assets/index-dc338bd2.css">
+    <link rel="modulepreload" crossorigin href="/Carpathians/assets/vendor-06901ec7.js">
+    <link rel="stylesheet" href="/Carpathians/assets/vendor-b64f21fc.css">
+    <link rel="stylesheet" href="/Carpathians/assets/index-9518dd28.css">
   </head>
   <body>
     <header class="header">
@@ -158,7 +158,7 @@
   <div class="tours-container container">
     <h2 class="tours-title" id="tours">Upcoming tours</h2>
     <div class="swiper">
-      <ul class="swiper-wrapper">
+      <ul class="swiper-wrapper list">
         <li class="swiper-slide">
           <picture>
             <source
@@ -270,7 +270,7 @@
             </svg>
           </button>
         </div>
-        <div class="back-container">
+        <div class="back-container is-hidden">
           <picture>
             <source
               srcset="
@@ -303,7 +303,7 @@
         </div>
       </li>
       <li class="reviews-item">
-        <div>
+        <div class="front-container">
           <div class="reviewers-photo-wrapper">
             <img
               class="reviewers-photo"
@@ -326,7 +326,7 @@
             </svg>
           </button>
         </div>
-        <div class="back-container">
+        <div class="back-container is-hidden">
           <picture>
             <source
               srcset="
@@ -358,8 +358,8 @@
           </picture>
         </div>
       </li>
-      <li class="reviews-item hidden">
-        <div>
+      <li class="reviews-item">
+        <div class="front-container is-hidden">
           <div class="reviewers-photo-wrapper">
             <img
               class="reviewers-photo"
@@ -384,8 +384,8 @@
             </svg>
           </button>
         </div>
-        <div>
-          <picture>
+        <div class="back-container is-hidden">
+          <picture class="back-image">
             <source
               srcset="
                 ../img/reviews/anita-rev-desktop-1x.jpg 1x,
@@ -407,217 +407,234 @@
 </section>
 
       <section class="gallery">
-  <h2 id="gallery" class="gallery-title">Gallery</h2>
-  <ul class="gallery-list list">
-    <li class="gallery-irem">
-      <picture>
-        <source
-          srcset="/Carpathians/assets/gallery1-desktop-1x-572a7eb0.jpg 1x, /Carpathians/assets/gallery1-desktop-2x-92ec8f49.jpg 2x"
-          media="(min-width: 1440px)"
-        />
-        <source
-          srcset="/Carpathians/assets/gallery1-tablet-1x-9380b11a.jpg 1x, /Carpathians/assets/gallery1-tablet-2x-9a3d61a7.jpg 2x"
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="/Carpathians/assets/gallery1-mobile-1x-cfaae353.jpg 1x, /Carpathians/assets/gallery1-mobile-2x-22177f90.jpg 2x"
-          media="(max-width: 767px)"
-        />
-        <img src=" img/gallery/gallery1-mobile-1x.jpg" alt="nature1" />
-      </picture>
-    </li>
-    <li class="gallery-irem">
-      <picture>
-        <source
-          srcset="/Carpathians/assets/gallery2-desktop-1x-9cd09e48.jpg 1x, /Carpathians/assets/gallery2-desktop-2x-aec4595d.jpg 2x"
-          media="(min-width: 1440px)"
-        />
-        <source
-          srcset="/Carpathians/assets/gallery2-tablet-1x-18fa1956.jpg 1x, /Carpathians/assets/gallery2-tablet-2x-65b5d390.jpg 2x"
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="/Carpathians/assets/gallery2-mobile-1x-a09707b7.jpg 1x, /Carpathians/assets/gallery2-mobile-2x-0e2e98b3.jpg 2x"
-          media="(max-width: 767px)"
-        />
-        <img src=" img/gallery/gallery2-mobile-1x.jpg" alt="nature2" />
-      </picture>
-    </li>
-    <li class="gallery-irem">
-      <picture>
-        <source
-          srcset="/Carpathians/assets/gallery3-desktop-1x-7361f061.jpg 1x, /Carpathians/assets/gallery3-desktop-2x-356bccb5.jpg 2x"
-          media="(min-width: 1440px)"
-        />
-        <source
-          srcset="/Carpathians/assets/gallery3-tablet-1x-4d488e5d.jpg 1x, /Carpathians/assets/gallery3-tablet-2x-16f57f4a.jpg 2x"
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="/Carpathians/assets/gallery3-mobile-1x-94da1784.jpg 1x, /Carpathians/assets/gallery3-mobile-2x-2e835011.jpg 2x"
-          media="(max-width: 767px)"
-        />
-        <img src=" img/gallery/gallery3-mobile-1x.jpg" alt="nature3" />
-      </picture>
-    </li>
-    <li class="gallery-irem">
-      <picture>
-        <source
-          srcset="/Carpathians/assets/gallery4-desktop-1x-b98383b3.jpg 1x, /Carpathians/assets/gallery4-desktop-2x-f342e0ef.jpg 2x"
-          media="(min-width: 1440px)"
-        />
-        <source
-          srcset="/Carpathians/assets/gallery4-tablet-1x-a0160d0d.jpg 1x, /Carpathians/assets/gallery4-tablet-2x-434a610f.jpg 2x"
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="/Carpathians/assets/gallery4-mobile-1x-f00419b7.jpg 1x, /Carpathians/assets/gallery4-mobile-2x-0c0738c4.jpg 2x"
-          media="(max-width: 767px)"
-        />
-        <img src=" img/gallery/gallery4-mobile-1x.jpg" alt="nature4" />
-      </picture>
-    </li>
-    <li class="gallery-irem">
-      <picture>
-        <source
-          srcset="/Carpathians/assets/gallery5-desktop-1x-f87c2af3.jpg 1x, /Carpathians/assets/gallery5-desktop-2x-7ccb1eda.jpg 2x"
-          media="(min-width: 1440px)"
-        />
-        <source
-          srcset="/Carpathians/assets/gallery5-tablet-1x-71aa0bca.jpg 1x, /Carpathians/assets/gallery5-tablet-2x-1bb4ba85.jpg 2x"
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="/Carpathians/assets/gallery5-mobile-1x-31c5ab6c.jpg 1x, /Carpathians/assets/gallery5-mobile-2x-a8d56070.jpg 2x"
-          media="(max-width: 767px)"
-        />
-        <img src=" img/gallery/gallery5-mobile-1x.jpg" alt="nature5" />
-      </picture>
-    </li>
-    <li class="gallery-irem">
-      <picture>
-        <source
-          srcset="/Carpathians/assets/gallery6-desktop-1x-a385d7be.jpg 1x, /Carpathians/assets/gallery6-desktop-2x-5698c76a.jpg 2x"
-          media="(min-width: 1440px)"
-        />
-        <source
-          srcset="/Carpathians/assets/gallery6-tablet-1x-f4c26d6e.jpg 1x, /Carpathians/assets/gallery6-tablet-2x-63ef67c5.jpg 2x"
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="/Carpathians/assets/gallery6-mobile-1x-bb3bf1f4.jpg 1x, /Carpathians/assets/gallery6-mobile-2x-1a63b389.jpg 2x"
-          media="(max-width: 767px)"
-        />
-        <img src=" img/gallery/gallery6-mobile-1x.jpg" alt="nature6" />
-      </picture>
-    </li>
-    <li class="gallery-irem">
-      <picture>
-        <source
-          srcset="/Carpathians/assets/gallery7-desktop-1x-c117f02c.jpg 1x, /Carpathians/assets/gallery7-desktop-2x-be9969fd.jpg 2x"
-          media="(min-width: 1440px)"
-        />
-        <source
-          srcset="/Carpathians/assets/gallery7-tablet-1x-1858ebf4.jpg 1x, /Carpathians/assets/gallery7-tablet-2x-58c1cef5.jpg 2x"
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="/Carpathians/assets/gallery7-mobile-1x-11c37d0f.jpg 1x, /Carpathians/assets/gallery7-mobile-2x-c0868ba5.jpg 2x"
-          media="(max-width: 767px)"
-        />
-        <img src=" img/gallery/gallery7-mobile-1x.jpg" alt="nature7" />
-      </picture>
-    </li>
-    <li class="gallery-irem">
-      <picture>
-        <source
-          srcset="/Carpathians/assets/gallery8-desktop-1x-7e04a2dc.jpg 1x, /Carpathians/assets/gallery8-desktop-2x-41e6e426.jpg 2x"
-          media="(min-width: 1440px)"
-        />
-        <source
-          srcset="/Carpathians/assets/gallery8-tablet-1x-3d9909d8.jpg 1x, /Carpathians/assets/gallery8-tablet-2x-6c933497.jpg 2x"
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="/Carpathians/assets/gallery8-mobile-1x-89ee1b27.jpg 1x, /Carpathians/assets/gallery8-mobile-2x-3db27039.jpg 2x"
-          media="(max-width: 767px)"
-        />
-        <img src=" img/gallery/gallery8-mobile-1x.jpg" alt="nature8" />
-      </picture>
-    </li>
-  </ul>
+  <div class="gallery-container container">
+    <h2 class="gallery-title" id="gallery">Gallery</h2>
+    <div class="swiper">
+      <ul class="swiper-wrapper list">
+        <li class="swiper-slide">
+          <picture>
+            <source
+              srcset="/Carpathians/assets/gallery1-desktop-1x-572a7eb0.jpg 1x, /Carpathians/assets/gallery1-desktop-2x-92ec8f49.jpg 2x"
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="/Carpathians/assets/gallery1-tablet-1x-9380b11a.jpg 1x, /Carpathians/assets/gallery1-tablet-2x-9a3d61a7.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/Carpathians/assets/gallery1-mobile-1x-cfaae353.jpg 1x, /Carpathians/assets/gallery1-mobile-2x-22177f90.jpg 2x"
+              media="(max-width: 767px)"
+            />
+            <img src=" img/gallery/gallery1-mobile-1x.jpg" alt="nature1" />
+          </picture>
+        </li>
+        <li class="swiper-slide">
+          <picture>
+            <source
+              srcset="/Carpathians/assets/gallery2-desktop-1x-9cd09e48.jpg 1x, /Carpathians/assets/gallery2-desktop-2x-aec4595d.jpg 2x"
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="/Carpathians/assets/gallery2-tablet-1x-18fa1956.jpg 1x, /Carpathians/assets/gallery2-tablet-2x-65b5d390.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/Carpathians/assets/gallery2-mobile-1x-a09707b7.jpg 1x, /Carpathians/assets/gallery2-mobile-2x-0e2e98b3.jpg 2x"
+              media="(max-width: 767px)"
+            />
+            <img src=" img/gallery/gallery2-mobile-1x.jpg" alt="nature2" />
+          </picture>
+        </li>
+        <li class="swiper-slide">
+          <picture>
+            <source
+              srcset="/Carpathians/assets/gallery3-desktop-1x-7361f061.jpg 1x, /Carpathians/assets/gallery3-desktop-2x-356bccb5.jpg 2x"
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="/Carpathians/assets/gallery3-tablet-1x-4d488e5d.jpg 1x, /Carpathians/assets/gallery3-tablet-2x-16f57f4a.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/Carpathians/assets/gallery3-mobile-1x-94da1784.jpg 1x, /Carpathians/assets/gallery3-mobile-2x-2e835011.jpg 2x"
+              media="(max-width: 767px)"
+            />
+            <img src=" img/gallery/gallery3-mobile-1x.jpg" alt="nature3" />
+          </picture>
+        </li>
+        <li class="swiper-slide">
+          <picture>
+            <source
+              srcset="/Carpathians/assets/gallery4-desktop-1x-b98383b3.jpg 1x, /Carpathians/assets/gallery4-desktop-2x-f342e0ef.jpg 2x"
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="/Carpathians/assets/gallery4-tablet-1x-a0160d0d.jpg 1x, /Carpathians/assets/gallery4-tablet-2x-434a610f.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/Carpathians/assets/gallery4-mobile-1x-f00419b7.jpg 1x, /Carpathians/assets/gallery4-mobile-2x-0c0738c4.jpg 2x"
+              media="(max-width: 767px)"
+            />
+            <img src=" img/gallery/gallery4-mobile-1x.jpg" alt="nature4" />
+          </picture>
+        </li>
+        <li class="swiper-slide">
+          <picture>
+            <source
+              srcset="/Carpathians/assets/gallery5-desktop-1x-f87c2af3.jpg 1x, /Carpathians/assets/gallery5-desktop-2x-7ccb1eda.jpg 2x"
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="/Carpathians/assets/gallery5-tablet-1x-71aa0bca.jpg 1x, /Carpathians/assets/gallery5-tablet-2x-1bb4ba85.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/Carpathians/assets/gallery5-mobile-1x-31c5ab6c.jpg 1x, /Carpathians/assets/gallery5-mobile-2x-a8d56070.jpg 2x"
+              media="(max-width: 767px)"
+            />
+            <img src=" img/gallery/gallery5-mobile-1x.jpg" alt="nature5" />
+          </picture>
+        </li>
+        <li class="swiper-slide">
+          <picture>
+            <source
+              srcset="/Carpathians/assets/gallery6-desktop-1x-a385d7be.jpg 1x, /Carpathians/assets/gallery6-desktop-2x-5698c76a.jpg 2x"
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="/Carpathians/assets/gallery6-tablet-1x-f4c26d6e.jpg 1x, /Carpathians/assets/gallery6-tablet-2x-63ef67c5.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/Carpathians/assets/gallery6-mobile-1x-bb3bf1f4.jpg 1x, /Carpathians/assets/gallery6-mobile-2x-1a63b389.jpg 2x"
+              media="(max-width: 767px)"
+            />
+            <img src=" img/gallery/gallery6-mobile-1x.jpg" alt="nature6" />
+          </picture>
+        </li>
+        <li class="swiper-slide">
+          <picture>
+            <source
+              srcset="/Carpathians/assets/gallery7-desktop-1x-c117f02c.jpg 1x, /Carpathians/assets/gallery7-desktop-2x-be9969fd.jpg 2x"
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="/Carpathians/assets/gallery7-tablet-1x-1858ebf4.jpg 1x, /Carpathians/assets/gallery7-tablet-2x-58c1cef5.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/Carpathians/assets/gallery7-mobile-1x-11c37d0f.jpg 1x, /Carpathians/assets/gallery7-mobile-2x-c0868ba5.jpg 2x"
+              media="(max-width: 767px)"
+            />
+            <img src=" img/gallery/gallery7-mobile-1x.jpg" alt="nature7" />
+          </picture>
+        </li>
+        <li class="swiper-slide">
+          <picture>
+            <source
+              srcset="/Carpathians/assets/gallery8-desktop-1x-7e04a2dc.jpg 1x, /Carpathians/assets/gallery8-desktop-2x-41e6e426.jpg 2x"
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="/Carpathians/assets/gallery8-tablet-1x-3d9909d8.jpg 1x, /Carpathians/assets/gallery8-tablet-2x-6c933497.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/Carpathians/assets/gallery8-mobile-1x-89ee1b27.jpg 1x, /Carpathians/assets/gallery8-mobile-2x-3db27039.jpg 2x"
+              media="(max-width: 767px)"
+            />
+            <img src=" img/gallery/gallery8-mobile-1x.jpg" alt="nature8" />
+          </picture>
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
 </section>
 
       <section class="questions">
-  <h2>Do you have any questions?</h2>
-  <p>
-    You can leave your questions here and our manager will call you back within
-    10 minutes
-  </p>
-  <form class="questions-form">
-    <label class="form-label"
-      ><input type="text" name="username" placeholder="Your name*" required
-    /></label>
-    <label class="form-label"
-      ><input type="tel" name="userphone" placeholder="Phone number*" required
-    /></label>
-    <label class="form-label"
-      ><input
-        type="text"
-        name="userquestion"
-        placeholder="What would you like to know?"
-        required
-    /></label>
-    <button type="submit" disabled>CALL ME</button>
-  </form>
+  <div class="questions-container container">
+    <h2>Do you have any questions?</h2>
+    <p>
+      You can leave your questions here and our manager will call you back
+      within 10 minutes
+    </p>
+    <form class="questions-form">
+      <label class="form-label"
+        ><input type="text" name="username" placeholder="Your name*" required
+      /></label>
+      <label class="form-label"
+        ><input
+          type="tel"
+          name="userphone"
+          placeholder="Phone number*"
+          required
+      /></label>
+      <label class="form-label"
+        ><input
+          type="text"
+          name="userquestion"
+          placeholder="What would you like to know?"
+          required
+      /></label>
+      <button type="submit" disabled>CALL ME</button>
+    </form>
+  </div>
 </section>
 
     </main>
     <footer>
-  <h2 id="contacts">Contacts</h2>
-  <address class="contacts">
-    <ul class="contacts-list list">
-      <li class="contacts-item">
-        <a
-          class="contacts-link link"
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://maps.app.goo.gl/iNgmkoacyuW4Mb1Y7"
-        >
-          <svg class="footer-icon" width="32" height="32">
-            <use href="/Carpathians/assets/sprite-461814ce.svg#icon-place"></use>
-          </svg>
-          Lviv, st Dorosheko, 44 k</a
-        >
-      </li>
-      <li class="contacts-item">
-        <a class="contacts-link link" target="_blank" href="tel:+380971626790">
-          <svg class="footer-icon" width="32" height="32">
-            <use href="/Carpathians/assets/sprite-461814ce.svg#icon-phone"></use>
-          </svg>
-          +38 (097) 162-67-90</a
-        >
-      </li>
-      <li class="contacts-item">
-        <a
-          class="contacts-link link"
-          target="_blank"
-          href="mailto:mandrykarpaty@gmail.com"
-        >
-          <svg class="footer-icon" width="32" height="32">
-            <use href="/Carpathians/assets/sprite-461814ce.svg#icon-email"></use>
-          </svg>
-          mandrykarpaty@gmail.com</a
-        >
-      </li>
-    </ul>
-    <p>
-      <svg class="footer-icon" width="16" height="16">
-        <use href="/Carpathians/assets/sprite-461814ce.svg#icon-copyright"></use>
-      </svg>
-      Created by LelekaSoft
-    </p>
-  </address>
+  <div class="footer-container container">
+    <h2 id="contacts">Contacts</h2>
+    <address class="contacts">
+      <ul class="contacts-list list">
+        <li class="contacts-item">
+          <a
+            class="contacts-link link"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://maps.app.goo.gl/iNgmkoacyuW4Mb1Y7"
+          >
+            <svg class="footer-icon" width="32" height="32">
+              <use href="/Carpathians/assets/sprite-461814ce.svg#icon-place"></use>
+            </svg>
+            Lviv, st Dorosheko, 44 k</a
+          >
+        </li>
+        <li class="contacts-item">
+          <a
+            class="contacts-link link"
+            target="_blank"
+            href="tel:+380971626790"
+          >
+            <svg class="footer-icon" width="32" height="32">
+              <use href="/Carpathians/assets/sprite-461814ce.svg#icon-phone"></use>
+            </svg>
+            +38 (097) 162-67-90</a
+          >
+        </li>
+        <li class="contacts-item">
+          <a
+            class="contacts-link link"
+            target="_blank"
+            href="mailto:mandrykarpaty@gmail.com"
+          >
+            <svg class="footer-icon" width="32" height="32">
+              <use href="/Carpathians/assets/sprite-461814ce.svg#icon-email"></use>
+            </svg>
+            mandrykarpaty@gmail.com</a
+          >
+        </li>
+      </ul>
+      <p>
+        <svg class="footer-icon" width="16" height="16">
+          <use href="/Carpathians/assets/sprite-461814ce.svg#icon-copyright"></use>
+        </svg>
+        Created by LelekaSoft
+      </p>
+    </address>
+  </div>
 </footer>
 
 
