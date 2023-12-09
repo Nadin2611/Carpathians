@@ -1,18 +1,31 @@
 .gallery {
+  padding-top: 52px;
 }
+
 .gallery-container {
 }
-.container {
-}
+
 .gallery-title {
+  color: var(--primary-black);
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
+
 .swiper {
+  margin-top: 28px;
 }
+
 .swiper-wrapper {
 }
-.list {
-}
+
 .swiper-slide {
 }
-.swiper-pagination {
+
+.gallery-image {
+  width: 280px;
+  height: 480px;
+  flex-shrink: 0;
 }
