@@ -9,7 +9,7 @@
     <script type="module" crossorigin src="/Carpathians/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/Carpathians/assets/vendor-06901ec7.js">
     <link rel="stylesheet" href="/Carpathians/assets/vendor-b64f21fc.css">
-    <link rel="stylesheet" href="/Carpathians/assets/index-9518dd28.css">
+    <link rel="stylesheet" href="/Carpathians/assets/index-24bb9191.css">
   </head>
   <body>
     <header class="header">
@@ -404,7 +404,11 @@
               srcset="/Carpathians/assets/gallery1-mobile-1x-cfaae353.jpg 1x, /Carpathians/assets/gallery1-mobile-2x-22177f90.jpg 2x"
               media="(max-width: 767px)"
             />
-            <img src=" img/gallery/gallery1-mobile-1x.jpg" alt="nature1" />
+            <img
+              class="gallery-image"
+              src=" img/gallery/gallery1-mobile-1x.jpg"
+              alt="nature1"
+            />
           </picture>
         </li>
         <li class="swiper-slide">
@@ -421,7 +425,11 @@
               srcset="/Carpathians/assets/gallery2-mobile-1x-a09707b7.jpg 1x, /Carpathians/assets/gallery2-mobile-2x-0e2e98b3.jpg 2x"
               media="(max-width: 767px)"
             />
-            <img src=" img/gallery/gallery2-mobile-1x.jpg" alt="nature2" />
+            <img
+              class="gallery-image"
+              src=" img/gallery/gallery2-mobile-1x.jpg"
+              alt="nature2"
+            />
           </picture>
         </li>
         <li class="swiper-slide">
@@ -438,7 +446,11 @@
               srcset="/Carpathians/assets/gallery3-mobile-1x-94da1784.jpg 1x, /Carpathians/assets/gallery3-mobile-2x-2e835011.jpg 2x"
               media="(max-width: 767px)"
             />
-            <img src=" img/gallery/gallery3-mobile-1x.jpg" alt="nature3" />
+            <img
+              class="gallery-image"
+              src=" img/gallery/gallery3-mobile-1x.jpg"
+              alt="nature3"
+            />
           </picture>
         </li>
         <li class="swiper-slide">
@@ -455,7 +467,11 @@
               srcset="/Carpathians/assets/gallery4-mobile-1x-f00419b7.jpg 1x, /Carpathians/assets/gallery4-mobile-2x-0c0738c4.jpg 2x"
               media="(max-width: 767px)"
             />
-            <img src=" img/gallery/gallery4-mobile-1x.jpg" alt="nature4" />
+            <img
+              class="gallery-image"
+              src=" img/gallery/gallery4-mobile-1x.jpg"
+              alt="nature4"
+            />
           </picture>
         </li>
         <li class="swiper-slide">
@@ -472,7 +488,11 @@
               srcset="/Carpathians/assets/gallery5-mobile-1x-31c5ab6c.jpg 1x, /Carpathians/assets/gallery5-mobile-2x-a8d56070.jpg 2x"
               media="(max-width: 767px)"
             />
-            <img src=" img/gallery/gallery5-mobile-1x.jpg" alt="nature5" />
+            <img
+              class="gallery-image"
+              src=" img/gallery/gallery5-mobile-1x.jpg"
+              alt="nature5"
+            />
           </picture>
         </li>
         <li class="swiper-slide">
@@ -489,7 +509,11 @@
               srcset="/Carpathians/assets/gallery6-mobile-1x-bb3bf1f4.jpg 1x, /Carpathians/assets/gallery6-mobile-2x-1a63b389.jpg 2x"
               media="(max-width: 767px)"
             />
-            <img src=" img/gallery/gallery6-mobile-1x.jpg" alt="nature6" />
+            <img
+              class="gallery-image"
+              src=" img/gallery/gallery6-mobile-1x.jpg"
+              alt="nature6"
+            />
           </picture>
         </li>
         <li class="swiper-slide">
@@ -506,7 +530,11 @@
               srcset="/Carpathians/assets/gallery7-mobile-1x-11c37d0f.jpg 1x, /Carpathians/assets/gallery7-mobile-2x-c0868ba5.jpg 2x"
               media="(max-width: 767px)"
             />
-            <img src=" img/gallery/gallery7-mobile-1x.jpg" alt="nature7" />
+            <img
+              class="gallery-image"
+              src=" img/gallery/gallery7-mobile-1x.jpg"
+              alt="nature7"
+            />
           </picture>
         </li>
         <li class="swiper-slide">
@@ -523,42 +551,49 @@
               srcset="/Carpathians/assets/gallery8-mobile-1x-89ee1b27.jpg 1x, /Carpathians/assets/gallery8-mobile-2x-3db27039.jpg 2x"
               media="(max-width: 767px)"
             />
-            <img src=" img/gallery/gallery8-mobile-1x.jpg" alt="nature8" />
+            <img
+              class="gallery-image"
+              src=" img/gallery/gallery8-mobile-1x.jpg"
+              alt="nature8"
+            />
           </picture>
         </li>
       </ul>
-      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
   </div>
 </section>
 
       <section class="questions">
   <div class="questions-container container">
-    <h2>Do you have any questions?</h2>
-    <p>
-      You can leave your questions here and our manager will call you back
-      within 10 minutes
-    </p>
-    <form class="questions-form">
-      <label class="form-label"
-        ><input type="text" name="username" placeholder="Your name*" required
-      /></label>
-      <label class="form-label"
-        ><input
-          type="tel"
-          name="userphone"
-          placeholder="Phone number*"
-          required
-      /></label>
-      <label class="form-label"
-        ><input
-          type="text"
-          name="userquestion"
-          placeholder="What would you like to know?"
-          required
-      /></label>
-      <button type="submit" disabled>CALL ME</button>
-    </form>
+    <div class="questions-wrapper">
+      <h2 class="questions-title">Do you have any questions?</h2>
+      <p class="questions-text">
+        You can leave your questions here and our manager will call you back
+        within 10 minutes
+      </p>
+      <form class="questions-form">
+        <label class="form-label"
+          ><input type="text" name="username" placeholder="Your name*" required
+        /></label>
+        <label class="form-label"
+          ><input
+            type="tel"
+            name="userphone"
+            placeholder="Phone number*"
+            required
+        /></label>
+        <label class="form-label"
+          ><input
+            type="text"
+            name="userquestion"
+            placeholder="What would you like to know?"
+            required
+        /></label>
+        <button class="questions-button" type="submit" disabled>CALL ME</button>
+      </form>
+    </div>
   </div>
 </section>
 
