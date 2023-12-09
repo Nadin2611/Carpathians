@@ -2,33 +2,20 @@ import Swiper from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-
 import './css/styles.css';
 
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 'auto',
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+  },
+});
+
 document.addEventListener('DOMContentLoaded', function () {
-  const swiper = new Swiper('.swiper', {
-    slidesPerView: 'auto',
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  });
-
-  const buttonNext = document.querySelector('.swiper-button-next');
-  const buttonPrev = document.querySelector('.swiper-button-prev');
-  console.log(buttonNext);
-  console.log(buttonPrev);
-
-  buttonNext.addEventListener('click', () => {
-    swiper.slideNext();
-  });
-  buttonPrev.addEventListener('click', () => {
-    swiper.slidePrev();
-  });
-
   const roundButtons = document.querySelectorAll('.reviews-button');
   const backEl = document.querySelectorAll('.back-container');
   const frontEl = document.querySelectorAll('.front-container');
