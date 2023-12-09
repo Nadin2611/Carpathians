@@ -19,6 +19,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const buttonNext = document.querySelector('.swiper-button-next');
   const buttonPrev = document.querySelector('.swiper-button-prev');
+  console.log(buttonNext);
+  console.log(buttonPrev);
 
   buttonNext.addEventListener('click', () => {
     swiper.slideNext();
