@@ -6,9 +6,6 @@ export const heroEl = document.querySelector('.hero-container');
 
 let isMenuOpen = false;
 
-console.log(burgerEl);
-console.log(menuEl);
-
 // Функція відкриття  меню
 export function openMenu() {
   if (!isMenuOpen) {
