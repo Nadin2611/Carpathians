@@ -11,10 +11,15 @@
   margin-bottom: 28px;
 }
 
-.tours-list {
-}
-
 .tours-item {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid var(--primary-blue);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .tours-item-button {
@@ -43,14 +48,7 @@
 }
 
 .swiper-slide {
-  box-sizing: border-box;
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  border: 1px solid var(--primary-blue);
+  text-align: center;
 }
 
 .tours-item-title {

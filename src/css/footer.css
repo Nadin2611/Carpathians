@@ -36,10 +36,12 @@
   line-height: normal;
   display: flex;
   align-items: center;
-  gap: 4px;
 }
 
 .footer-contacts-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .footer-icon {

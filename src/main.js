@@ -1,10 +1,8 @@
 import './js/header';
 import './js/burger';
 
-import Swiper from 'swiper';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 import './css/styles.css';
 
 const swiper = new Swiper('.swiper', {
