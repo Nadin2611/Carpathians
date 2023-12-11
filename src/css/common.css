@@ -5,6 +5,7 @@
   --primary-dark: #202321;
   --primary-light: #f7fbfb;
   --primary-grey: #a3a5a3;
+  --primary-bg-dark: rgba(32, 35, 33, 0.7);
 
   --swiper-theme-color: var(--primary-blue);
 
@@ -43,7 +44,10 @@ button {
   cursor: pointer;
   border: none;
 }
-/* 
+img {
+  display: block;
+}
+
 @media screen and (min-width: 375px) {
   .container {
     max-width: 375px;
@@ -62,4 +66,4 @@ button {
     max-width: 1440px;
     padding: 0 135px;
   }
-} */
+}
