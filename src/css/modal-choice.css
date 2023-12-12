@@ -1,26 +1,109 @@
 .modal-choice {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.8s ease 0s;
+}
+.popup {
+}
+.backdrop {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.swiper {
+.popup-body {
+}
+.modal-container {
+  position: relative;
+}
+.more-details-wrapper-down {
+  background-color: var(--primary-light);
+  padding: 28px 15px;
 }
 
-.swiper-wrapper {
+.popup-content {
 }
 
 .more-details-list {
 }
 
-.swiper-slide {
-}
-
 .more-details-item {
 }
 
+.more-details-wrapper {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url('../img/tour/hoverla-mobile-1day-1x.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 56px;
+}
 .more-details-title {
+  color: var(--primary-light);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.22;
+  margin-bottom: 12px;
+  text-align: left;
+  padding-left: 48px;
 }
-
+.more-details-close-btn {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  background-color: rgba(0, 0, 0, 0);
+}
+.popup-close {
+}
+.icon-close-modal {
+  background: transparent;
+  fill: var(--primary-light);
+}
+.more-details-text {
+  color: var(--primary-light);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25;
+  margin-bottom: 12px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 53px;
+  text-align: left;
+  border-radius: 0px 8px 8px 0px;
+  background: var(--primary-blue);
+}
 .day-list {
+  color: var(--primary-light);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 48px;
+  gap: 12px;
 }
 
-.swiper-pagination {
+.more-details-price {
+  color: var(--primary-dark);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 16px;
 }
