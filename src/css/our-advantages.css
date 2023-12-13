@@ -16,7 +16,7 @@
         rgba(0, 0, 0, 0.2) 0%,
         rgba(0, 0, 0, 0.2) 100%
       ),
-      url(../img/Advantages-mobile-1x.jpg), lightgray 50%;
+      url(../img/advantages/advantages-mobile-1x.jpg), lightgray 50%;
     background-size: cover;
     background-repeat: no-repeat;
 
