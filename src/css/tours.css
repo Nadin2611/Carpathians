@@ -3,7 +3,6 @@
 }
 .tours-container {
 }
-
 .tours-title {
   text-align: center;
   font-size: 32px;
@@ -20,6 +19,12 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+.tours-item img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .tours-item-button {

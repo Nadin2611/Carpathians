@@ -17,6 +17,12 @@
   margin-top: 28px;
 }
 
+.reviews-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+}
+
 .reviews-item:not(:last-child) {
   margin-bottom: 32px;
 }

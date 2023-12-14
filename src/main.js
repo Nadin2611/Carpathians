@@ -1,6 +1,6 @@
 import './js/header';
 import './js/burger';
-import './js/modal-choice';
+// import './js/modal-choice';
 
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
