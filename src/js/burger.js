@@ -6,13 +6,15 @@ export const heroEl = document.querySelector('.hero-container');
 
 let isMenuOpen = false;
 
-// Функція відкриття  меню
+
 export function openMenu() {
   if (!isMenuOpen) {
     menuEl.classList.remove('is-hidden');
     heroEl.classList.add('is-hidden');
     document.body.classList.add('no-scroll');
-    // анімація появи  меню
+
+
+    
     anime({
       targets: menuEl,
       translateX: ['100%', '0%'],
@@ -28,11 +30,12 @@ export function openMenu() {
   }
 }
 
-// Функція закриття  меню
+
 export function closeMenu() {
   if (isMenuOpen) {
     document.body.classList.remove('no-scroll');
-    // анімація закриття  меню
+
+    
     anime({
       targets: menuEl,
       translateX: ['0%', '100%'],
