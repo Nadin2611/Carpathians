@@ -21,6 +21,7 @@
 .modal-container {
   position: relative;
 }
+
 .more-details-wrapper-down {
   background-color: var(--primary-light);
   padding: 28px 15px;
@@ -35,6 +36,66 @@
 .more-details-wrapper {
   padding-top: 56px;
   padding-bottom: 118px;
+}
+
+.more-details-title {
+  color: var(--primary-light);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.22;
+  margin-bottom: 12px;
+  text-align: left;
+  padding-left: 48px;
+}
+.more-details-close-btn {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.icon-close-modal {
+  background: transparent;
+  fill: var(--primary-light);
+}
+
+.more-details-text {
+  color: var(--primary-light);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25;
+  margin-bottom: 12px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 53px;
+  text-align: left;
+  border-radius: 0px 8px 8px 0px;
+  background: var(--primary-blue);
+}
+
+.day-list {
+  color: var(--primary-light);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 48px;
+  gap: 12px;
+}
+
+.more-details-price {
+  color: var(--primary-dark);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 16px;
 }
 
 /* --------------------------------------HOVERLA--------------------------------------- */
@@ -199,62 +260,692 @@
   background-repeat: no-repeat;
 }
 
-.more-details-title {
-  color: var(--primary-light);
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 1.22;
-  margin-bottom: 12px;
-  text-align: left;
-  padding-left: 48px;
-}
-.more-details-close-btn {
-  position: absolute;
-  right: 12px;
-  top: 12px;
-  background-color: rgba(0, 0, 0, 0);
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  /* --------------------------------------HOVERLA--------------------------------------- */
+  .more-details-wrapper.hoverla.day1 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url(../img/tours/hoverla-mobile-1day-2x.jpg);
+  }
+  .more-details-wrapper.hoverla.day2 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url(../img/tours/hoverla-mobile-2day-2x.jpg);
+  }
+  .more-details-wrapper.hoverla.day3 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url(../img/tours/hoverla-mobile-3day-2x.jpg);
+  }
+  /* --------------------------------------BUKOVEL--------------------------------------- */
+  .more-details-wrapper.bukovel.day1 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url(../img/tours/bukovel-mobile-1day-2x.jpg);
+  }
+  .more-details-wrapper.bukovel.day2 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url(../img/tours/bukovel-mobile-2day-2x.jpg);
+  }
+  .more-details-wrapper.bukovel.day3 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url(../img/tours/bukovel-mobile-3day-2x.jpg);
+  }
+  .more-details-wrapper.bukovel.day4 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url(../img/tours/bukovel-mobile-4day-2x.jpg);
+  }
+  /* --------------------------------------CARPATHIANS--------------------------------------- */
+  .more-details-wrapper.carpathians.day1 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url(../img/tours/carpathians-mobile-1day-2x.jpg);
+  }
+  .more-details-wrapper.carpathians.day2 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url(../img/tours/carpathians-mobile-2day-2x.jpg);
+  }
+  .more-details-wrapper.carpathians.day3 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      carpathians url(../img/tours/carpathians-mobile-3day-2x.jpg);
+  }
+  .more-details-wrapper.carpathians.day4 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url(../img/tours/carpathians-mobile-4day-2x.jpg);
+  }
+  .more-details-wrapper.carpathians.day5 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url(../img/tours/carpathians-mobile-5day-2x.jpg);
+  }
+  .more-details-wrapper.carpathians.day6 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url(../img/tours/carpathians-mobile-6day-2x.jpg);
+  }
+  .more-details-wrapper.carpathians.day7 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url(../img/tours/carpathians-mobile-7day-2x.jpg);
+  }
 }
 
-.icon-close-modal {
-  background: transparent;
-  fill: var(--primary-light);
+/* TODO:================================================================================= */
+@media screen and (min-width: 768px) {
+  /* --------------------------------------HOVERLA--------------------------------------- */
+  .more-details-wrapper.hoverla.day1 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../img/tours/hoverla-tablet-1day-1x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .more-details-wrapper.hoverla.day2 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../img/tours/hoverla-tablet-2day-1x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .more-details-wrapper.hoverla.day3 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../img/tours/hoverla-tablet-3day-1x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  /* --------------------------------------BUKOVEL--------------------------------------- */
+
+  .more-details-wrapper.bukovel.day1 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../img/tours/bukovel-tablet-1day-1x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .more-details-wrapper.bukovel.day2 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../img/tours/bukovel-tablet-2day-1x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .more-details-wrapper.bukovel.day3 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../img/tours/bukovel-tablet-3day-1x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .more-details-wrapper.bukovel.day4 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../img/tours/bukovel-tablet-4day-1x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  /* --------------------------------------CARPATHIANS--------------------------------------- */
+
+  .more-details-wrapper.carpathians.day1 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../img/tours/carpathians-tablet-1day-1x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .more-details-wrapper.carpathians.day2 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../img/tours/carpathians-tablet-2day-1x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .more-details-wrapper.carpathians.day3 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../img/tours/carpathians-tablet-3day-1x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .more-details-wrapper.carpathians.day4 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../img/tours/carpathians-tablet-4day-1x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .more-details-wrapper.carpathians.day5 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../img/tours/carpathians-tablet-5day-1x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .more-details-wrapper.carpathians.day6 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../img/tours/carpathians-tablet-6day-1x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .more-details-wrapper.carpathians.day7 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../img/tours/carpathians-tablet-7day-1x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    /* --------------------------------------HOVERLA--------------------------------------- */
+    .more-details-wrapper.hoverla.day1 {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url(../img/tours/hoverla-tablet-1day-2x.jpg);
+    }
+    .more-details-wrapper.hoverla.day2 {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url(../img/tours/hoverla-tablet-2day-2x.jpg);
+    }
+    .more-details-wrapper.hoverla.day3 {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url(../img/tours/hoverla-tablet-3day-2x.jpg);
+    }
+    /* --------------------------------------BUKOVEL--------------------------------------- */
+    .more-details-wrapper.bukovel.day1 {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url(../img/tours/bukovel-tablet-1day-2x.jpg);
+    }
+    .more-details-wrapper.bukovel.day2 {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url(../img/tours/bukovel-tablet-2day-2x.jpg);
+    }
+    .more-details-wrapper.bukovel.day3 {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url(../img/tours/bukovel-tablet-3day-2x.jpg);
+    }
+    .more-details-wrapper.bukovel.day4 {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url(../img/tours/bukovel-tablet-4day-2x.jpg);
+    }
+    /* --------------------------------------CARPATHIANS--------------------------------------- */
+    .more-details-wrapper.carpathians.day1 {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url(../img/tours/carpathians-tablet-1day-2x.jpg);
+    }
+    .more-details-wrapper.carpathians.day2 {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url(../img/tours/carpathians-tablet-2day-2x.jpg);
+    }
+    .more-details-wrapper.carpathians.day3 {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url(../img/tours/carpathians-tablet-3day-2x.jpg);
+    }
+    .more-details-wrapper.carpathians.day4 {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url(../img/tours/carpathians-tablet-4day-2x.jpg);
+    }
+    .more-details-wrapper.carpathians.day5 {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url(../img/tours/carpathians-tablet-5day-2x.jpg);
+    }
+    .more-details-wrapper.carpathians.day6 {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url(../img/tours/carpathians-tablet-6day-2x.jpg);
+    }
+    .more-details-wrapper.carpathians.day7 {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url(../img/tours/carpathians-tablet-7day-2x.jpg);
+    }
+  }
 }
 
-.more-details-text {
-  color: var(--primary-light);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.25;
-  margin-bottom: 12px;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 53px;
-  text-align: left;
-  border-radius: 0px 8px 8px 0px;
-  background: var(--primary-blue);
-}
+/* TODO:================================================================================= */
+@media screen and (min-width: 1440px) {
+  /* --------------------------------------HOVERLA--------------------------------------- */
+  .more-details-wrapper.hoverla.day1 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../img/tours/hoverla-desktop-1day-1x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .more-details-wrapper.hoverla.day2 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../img/tours/hoverla-desktop-2day-1x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .more-details-wrapper.hoverla.day3 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../img/tours/hoverla-desktop-3day-1x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
-.day-list {
-  color: var(--primary-light);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.25;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-left: 48px;
-  gap: 12px;
-}
+  /* --------------------------------------BUKOVEL--------------------------------------- */
 
-.more-details-price {
-  color: var(--primary-dark);
-  text-align: center;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 1.25;
-  margin-bottom: 16px;
+  .more-details-wrapper.bukovel.day1 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../img/tours/bukovel-desktop-1day-1x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .more-details-wrapper.bukovel.day2 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../img/tours/bukovel-desktop-2day-1x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .more-details-wrapper.bukovel.day3 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../img/tours/bukovel-desktop-3day-1x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .more-details-wrapper.bukovel.day4 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../img/tours/bukovel-desktop-4day-1x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  /* --------------------------------------CARPATHIANS--------------------------------------- */
+
+  .more-details-wrapper.carpathians.day1 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../img/tours/carpathians-desktop-1day-1x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .more-details-wrapper.carpathians.day2 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../img/tours/carpathians-desktop-2day-1x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .more-details-wrapper.carpathians.day3 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../img/tours/carpathians-desktop-3day-1x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .more-details-wrapper.carpathians.day4 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../img/tours/carpathians-desktop-4day-1x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .more-details-wrapper.carpathians.day5 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../img/tours/carpathians-desktop-5day-1x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .more-details-wrapper.carpathians.day6 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../img/tours/carpathians-desktop-6day-1x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .more-details-wrapper.carpathians.day7 {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url('../img/tours/carpathians-desktop-7day-1x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    /* --------------------------------------HOVERLA--------------------------------------- */
+    .more-details-wrapper.hoverla.day1 {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url(../img/tours/hoverla-desktop-1day-2x.jpg);
+    }
+    .more-details-wrapper.hoverla.day2 {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url(../img/tours/hoverla-desktop-2day-2x.jpg);
+    }
+    .more-details-wrapper.hoverla.day3 {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url(../img/tours/hoverla-desktop-3day-2x.jpg);
+    }
+    /* --------------------------------------BUKOVEL--------------------------------------- */
+    .more-details-wrapper.bukovel.day1 {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url(../img/tours/bukovel-desktop-1day-2x.jpg);
+    }
+    .more-details-wrapper.bukovel.day2 {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url(../img/tours/bukovel-desktop-2day-2x.jpg);
+    }
+    .more-details-wrapper.bukovel.day3 {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url(../img/tours/bukovel-desktop-3day-2x.jpg);
+    }
+    .more-details-wrapper.bukovel.day4 {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url(../img/tours/bukovel-desktop-4day-2x.jpg);
+    }
+    /* --------------------------------------CARPATHIANS--------------------------------------- */
+    .more-details-wrapper.carpathians.day1 {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url(../img/tours/carpathians-desktop-1day-2x.jpg);
+    }
+    .more-details-wrapper.carpathians.day2 {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url(../img/tours/carpathians-desktop-2day-2x.jpg);
+    }
+    .more-details-wrapper.carpathians.day3 {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url(../img/tours/carpathians-desktop-3day-2x.jpg);
+    }
+    .more-details-wrapper.carpathians.day4 {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url(../img/tours/carpathians-desktop-4day-2x.jpg);
+    }
+    .more-details-wrapper.carpathians.day5 {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url(../img/tours/carpathians-desktop-5day-2x.jpg);
+    }
+    .more-details-wrapper.carpathians.day6 {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url(../img/tours/carpathians-desktop-6day-2x.jpg);
+    }
+    .more-details-wrapper.carpathians.day7 {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0.5) 100%
+        ),
+        url(../img/tours/carpathians-desktop-7day-2x.jpg);
+    }
+  }
 }

@@ -3,18 +3,24 @@
     <div class="questions-wrapper">
       <h2 class="questions-title">Do you have any questions?</h2>
       <p class="questions-text">
-        You can leave your questions here and our manager will call you back
-        within 10 minutes
+        You can leave your questions here and our manager will call you back
+        within 10 minutes
       </p>
       <form class="questions-form">
         <label class="form-label"
-          ><input type="text" name="username" placeholder="Your name*" required
+          ><input
+            type="text"
+            name="username"
+            placeholder="Your name*"
+            pattern="[a-zA-Zа-яА-ЯІіЇїЄє ]+(([' \-][a-zA-Zа-яА-ЯІіЇїЄє ])?[a-zA-Zа-яА-ЯІіЇїЄє])+$"
+            required
         /></label>
         <label class="form-label"
           ><input
             type="tel"
             name="userphone"
             placeholder="Phone number*"
+            pattern="\+?[0-9\s\-\(\)]+"
             required
         /></label>
         <label class="form-label"

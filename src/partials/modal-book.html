@@ -1,37 +1,76 @@
-<div class="modal-book">
-  <button class="modal-button" type="button">
-    <svg class="modal-btn-close" width="30" height="30">
-      <use href="/img/sprite.svg#icon-close"></use>
-    </svg>
-  </button>
-  <h2>Book a tour</h2>
-  <p>
-    You can leave your application here and our manager will call you within 10
-    minutes
-  </p>
-  <form class="modal-form">
-    <label for=""
-      ><input
-        type="text"
-        name="username"
-        placeholder="Your name*"
-        required /></label
-    ><label for=""
-      ><input
-        type="tel"
-        name="userphone"
-        placeholder="Phone number*"
-        required /></label
-    ><label for=""
-      ><input type="checkbox" name="tour" value="sports" checked />Ascent
-      to Hoverla</label
-    ><label for=""
-      ><input type="checkbox" name="tour" value="sports" />Ski tour to
-      Bukovel</label
-    ><label for=""
-      ><input type="checkbox" name="tour" value="sports" />Week in
-      Carpathians</label
-    >
-    <button type="button">CALL ME</button>
-  </form>
+<div class="modal-book is-hidden">
+  <div class="backdrop">
+    <div class="modal-book-container container">
+      <button class="modal-button" type="button" title="Close">
+        <svg class="modal-btn-close" width="30" height="30">
+          <use href="/img/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <h2 class="modal-book-title">Book a tour</h2>
+      <p class="modal-book-text">
+        You can leave your application here <br />
+        and our manager will call you <br />within 10 minutes
+      </p>
+      <form class="modal-book-form">
+        <div class="input-block">
+          <label for=""
+            ><input
+              type="text"
+              name="username"
+              placeholder="Your name*"
+              pattern="[a-zA-Zа-яА-ЯІіЇїЄє ]+(([' \-][a-zA-Zа-яА-ЯІіЇїЄє ])?[a-zA-Zа-яА-ЯІіЇїЄє])+$"
+              required /></label
+          ><label for=""
+            ><input
+              type="tel"
+              name="userphone"
+              placeholder="Phone number*"
+              pattern="\+?[0-9\s\-\(\)]+"
+              required
+          /></label>
+        </div>
+        <div class="checkbox-block">
+          <input
+            type="checkbox"
+            class="input-check is-hidden"
+            name="tour"
+            id="hoverla"
+            value="tour-hoverla"
+            checked
+          /><label for="hoverla"
+            ><span class="name-tour">
+              <svg class="check-icon" width="20" height="20">
+                <use href="../img/sprite.svg#icon-check"></use>
+              </svg> </span
+            >Ascent to Hoverla</label
+          ><input
+            type="checkbox"
+            class="input-check is-hidden"
+            name="tour"
+            id="bukovel"
+            value="tour-bukovel"
+          /><label for="bukovel"
+            ><span class="name-tour">
+              <svg class="check-icon" width="20" height="20">
+                <use href="../img/sprite.svg#icon-check"></use>
+              </svg> </span
+            >Ski tour to Bukovel</label
+          ><input
+            type="checkbox"
+            class="input-check is-hidden"
+            name="tour"
+            id="carpathians"
+            value="tour-carpathians"
+          /><label for="carpathians"
+            ><span class="name-tour">
+              <svg class="check-icon" width="20" height="20">
+                <use href="../img/sprite.svg#icon-check"></use>
+              </svg> </span
+            >Week in Carpathians</label
+          >
+        </div>
+        <button class="modal-book-button" type="submit">CALL ME</button>
+      </form>
+    </div>
+  </div>
 </div>

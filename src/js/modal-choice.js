@@ -25,6 +25,7 @@ const openModal = modalElement => {
 
   const closeButton = modalElement.querySelector('.icon-close-modal');
 
+  closeButton.removeEventListener('click', closeModal);
   closeButton.addEventListener('click', closeModal);
 };
 
@@ -34,3 +35,9 @@ const closeModal = () => {
   modalElBukovel.classList.add('is-hidden');
   modalElCarpathians.classList.add('is-hidden');
 };
+
+const modalElButtons = document.querySelectorAll('.tours-button');
+
+modalElButtons.forEach(button => {
+  button.addEventListener('click', closeModal);
+});
