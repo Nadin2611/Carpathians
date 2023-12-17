@@ -35,7 +35,7 @@
 }
 .questions-wrapper {
   box-sizing: border-box;
-  max-width: 311px;
+  min-width: 311px;
   background-color: var(--primary-light);
   padding: 28px 20px;
 }
@@ -72,7 +72,6 @@
 
 .questions-form label {
   position: relative;
-  margin-bottom: 20px;
 }
 
 .questions-form input {

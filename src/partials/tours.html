@@ -2,7 +2,7 @@
   <div class="tours-container container">
     <h2 class="tours-title" id="tours">Upcoming tours</h2>
     <div class="swiper">
-      <ul class="swiper-wrapper list" navigation="true">
+      <ul class="swiper-wrapper tours-list list" navigation="true">
         <li class="swiper-slide tours-item">
           <picture>
             <source
@@ -35,7 +35,13 @@
           </picture>
           <h3 class="tours-item-title">Week in Carpathians</h3>
           <p class="tours-item-text">From UAH 9,999/person</p>
-          <button class="tours-item-button" type="button">MORE DETAILS</button>
+          <button
+            class="tours-item-button"
+            data-modal="carpathians"
+            type="button"
+          >
+            MORE DETAILS
+          </button>
         </li>
         <li class="swiper-slide tours-item">
           <picture>
@@ -69,7 +75,9 @@
           </picture>
           <h3 class="tours-item-title">Ski tour to Bukovel</h3>
           <p class="tours-item-text">From UAH 7,499/person</p>
-          <button class="tours-item-button" type="button">MORE DETAILS</button>
+          <button class="tours-item-button" data-modal="bukovel" type="button">
+            MORE DETAILS
+          </button>
         </li>
         <li class="swiper-slide tours-item">
           <picture>
@@ -103,7 +111,9 @@
           </picture>
           <h3 class="tours-item-title">Ascent to Hoverla</h3>
           <p class="tours-item-text">From UAH 4,499/person</p>
-          <button class="tours-item-button" type="button">MORE DETAILS</button>
+          <button class="tours-item-button" data-modal="hoverla" type="button">
+            MORE DETAILS
+          </button>
         </li>
       </ul>
       <div class="swiper-button-prev"></div>

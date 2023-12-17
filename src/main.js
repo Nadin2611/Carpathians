@@ -1,6 +1,6 @@
 import './js/header';
 import './js/burger';
-// import './js/modal-choice';
+import './js/modal-choice';
 
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
@@ -9,11 +9,11 @@ import './css/styles.css';
 export const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
-  loop: true,
 
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
 
   // Navigation arrows

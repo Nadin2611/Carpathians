@@ -8,9 +8,9 @@
   overflow-y: auto;
   overflow-x: hidden;
   transition: all 0.8s ease 0s;
+  z-index: 998;
 }
-.popup {
-}
+
 .backdrop {
   min-height: 100%;
   display: flex;
@@ -18,17 +18,12 @@
   justify-content: center;
 }
 
-.popup-body {
-}
 .modal-container {
   position: relative;
 }
 .more-details-wrapper-down {
   background-color: var(--primary-light);
   padding: 28px 15px;
-}
-
-.popup-content {
 }
 
 .more-details-list {
@@ -38,17 +33,44 @@
 }
 
 .more-details-wrapper {
+  padding-top: 56px;
+  padding-bottom: 118px;
+}
+
+.more-details-wrapper.day1 {
   background-image: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.5) 0%,
       rgba(0, 0, 0, 0.5) 100%
     ),
-    url('../img/tour/hoverla-mobile-1day-1x.jpg');
+    url('../img/tours/hoverla-mobile-1day-1x.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 56px;
 }
+.more-details-wrapper.day2 {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url('../img/tours/hoverla-mobile-2day-1x.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.more-details-wrapper.day3 {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url('../img/tours/hoverla-mobile-3day-1x.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .more-details-title {
   color: var(--primary-light);
   font-size: 18px;
@@ -65,12 +87,12 @@
   top: 12px;
   background-color: rgba(0, 0, 0, 0);
 }
-.popup-close {
-}
+
 .icon-close-modal {
   background: transparent;
   fill: var(--primary-light);
 }
+
 .more-details-text {
   color: var(--primary-light);
   font-size: 16px;
@@ -85,6 +107,7 @@
   border-radius: 0px 8px 8px 0px;
   background: var(--primary-blue);
 }
+
 .day-list {
   color: var(--primary-light);
   font-size: 16px;
