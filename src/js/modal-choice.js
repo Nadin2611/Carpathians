@@ -22,7 +22,7 @@ moreDetailsButtons.forEach(button => {
 const openModal = modalElement => {
   isModalOpen = true;
   modalElement.classList.remove('is-hidden');
-
+  document.body.classList.add('no-scroll');
   const closeButton = modalElement.querySelector('.icon-close-modal');
 
   closeButton.removeEventListener('click', closeModal);
@@ -34,6 +34,7 @@ const closeModal = () => {
   modalElHoverla.classList.add('is-hidden');
   modalElBukovel.classList.add('is-hidden');
   modalElCarpathians.classList.add('is-hidden');
+  document.body.classList.remove('no-scroll');
 };
 
 const modalElButtons = document.querySelectorAll('.tours-button');

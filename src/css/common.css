@@ -40,6 +40,10 @@ body {
   position: absolute;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 button {
   text-decoration: none;
   cursor: pointer;
