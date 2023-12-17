@@ -9,7 +9,7 @@
     <script type="module" crossorigin src="/Carpathians/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/Carpathians/assets/vendor-5f99528f.js">
     <link rel="stylesheet" href="/Carpathians/assets/vendor-9f55d67b.css">
-    <link rel="stylesheet" href="/Carpathians/assets/index-5290aae6.css">
+    <link rel="stylesheet" href="/Carpathians/assets/index-2c70dce2.css">
   </head>
   <body>
     <header class="header">
@@ -140,7 +140,7 @@
   <div class="tours-container container">
     <h2 class="tours-title" id="tours">Upcoming tours</h2>
     <div class="swiper">
-      <ul class="swiper-wrapper list" navigation="true">
+      <ul class="swiper-wrapper tours-list list" navigation="true">
         <li class="swiper-slide tours-item">
           <picture>
             <source
@@ -164,7 +164,13 @@
           </picture>
           <h3 class="tours-item-title">Week in Carpathians</h3>
           <p class="tours-item-text">From UAH 9,999/person</p>
-          <button class="tours-item-button" type="button">MORE DETAILS</button>
+          <button
+            class="tours-item-button"
+            data-modal="carpathians"
+            type="button"
+          >
+            MORE DETAILS
+          </button>
         </li>
         <li class="swiper-slide tours-item">
           <picture>
@@ -189,7 +195,9 @@
           </picture>
           <h3 class="tours-item-title">Ski tour to Bukovel</h3>
           <p class="tours-item-text">From UAH 7,499/person</p>
-          <button class="tours-item-button" type="button">MORE DETAILS</button>
+          <button class="tours-item-button" data-modal="bukovel" type="button">
+            MORE DETAILS
+          </button>
         </li>
         <li class="swiper-slide tours-item">
           <picture>
@@ -214,7 +222,9 @@
           </picture>
           <h3 class="tours-item-title">Ascent to Hoverla</h3>
           <p class="tours-item-text">From UAH 4,499/person</p>
-          <button class="tours-item-button" type="button">MORE DETAILS</button>
+          <button class="tours-item-button" data-modal="hoverla" type="button">
+            MORE DETAILS
+          </button>
         </li>
       </ul>
       <div class="swiper-button-prev"></div>
@@ -716,15 +726,15 @@
   </form>
 </div>
 
-    <section class="modal-choice popup is-hidden" id="modal-choice">
-  <div class="backdrop popup-body">
-    <div class="modal-container container popup-content">
+    <section class="modal-choice hoverla is-hidden" id="modal-choice">
+  <div class="backdrop">
+    <div class="modal-container container">
       <div class="swiper">
         <ul class="swiper-wrapper more-details-list list">
           <li class="swiper-slide more-details-item">
-            <div class="more-details-wrapper">
+            <div class="more-details-wrapper day1">
               <h3 class="more-details-title">Ascent to Hoverla</h3>
-              <button type="button" class="more-details-close-btn popup-close">
+              <button type="button" class="more-details-close-btn">
                 <svg class="icon-close-modal" width="24" height="24">
                   <use href="../img/sprite.svg#icon-close">x</use>
                 </svg>
@@ -742,39 +752,262 @@
             </div>
           </li>
           <li class="swiper-slide more-details-item">
-            <h3 class="more-details-title">Ascent to Hoverla</h3>
-            <button type="button" class="more-details-close-btn popup-close">
-              <svg class="icon-close-modal" width="24" height="24"></svg>
-            </button>
-            <p class="more-details-text">2 day</p>
-            <ul class="day-list list">
-              <li>Breakfast</li>
-              <li>Ascent to Hoverla</li>
-              <li>Dinner</li>
-              <li>Reacretion</li>
-              <li>Sauna</li>
-              <li>Dinner</li>
-            </ul>
+            <div class="more-details-wrapper day2">
+              <h3 class="more-details-title">Ascent to Hoverla</h3>
+              <button type="button" class="more-details-close-btn">
+                <svg class="icon-close-modal" width="24" height="24"></svg>
+              </button>
+              <p class="more-details-text">2 day</p>
+              <ul class="day-list list">
+                <li>Breakfast</li>
+                <li>Ascent to Hoverla</li>
+                <li>Dinner</li>
+                <li>Reacretion</li>
+                <li>Sauna</li>
+                <li>Dinner</li>
+              </ul>
+            </div>
           </li>
           <li class="swiper-slide more-details-item">
-            <h3 class="more-details-title">Ascent to Hoverla</h3>
-            <button type="button" class="more-details-close-btn popup-close">
-              <svg class="icon-close-modal" width="24" height="24"></svg>
-            </button>
-            <p class="more-details-text">3 day</p>
-            <ul class="day-list list">
-              <li>Breakfast</li>
-              <li>A walk around Bukovel</li>
-              <li>Check out from the hotel</li>
-              <li>Yaremche</li>
-              <li>Arrival in Lviv</li>
-            </ul>
+            <div class="more-details-wrapper day3">
+              <h3 class="more-details-title">Ascent to Hoverla</h3>
+              <button type="button" class="more-details-close-btn">
+                <svg class="icon-close-modal" width="24" height="24"></svg>
+              </button>
+              <p class="more-details-text">3 day</p>
+              <ul class="day-list list">
+                <li>Breakfast</li>
+                <li>A walk around Bukovel</li>
+                <li>Check out from the hotel</li>
+                <li>Yaremche</li>
+                <li>Arrival in Lviv</li>
+              </ul>
+            </div>
           </li>
         </ul>
         <div class="swiper-pagination"></div>
       </div>
       <div class="more-details-wrapper-down">
         <p class="more-details-price">UAH 4,499/person</p>
+        <button class="hero-button" type="button">BOOK A TOUR</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="modal-choice bukovel is-hidden" id="modal-choice">
+  <div class="backdrop">
+    <div class="modal-container container">
+      <div class="swiper">
+        <ul class="swiper-wrapper more-details-list list">
+          <li class="swiper-slide more-details-item">
+            <div class="more-details-wrapper day1">
+              <h3 class="more-details-title">Ski tour to Bukovel</h3>
+              <button type="button" class="more-details-close-btn">
+                <svg class="icon-close-modal" width="24" height="24">
+                  <use href="../img/sprite.svg#icon-close">x</use>
+                </svg>
+              </button>
+              <p class="more-details-text">1 day</p>
+              <ul class="day-list list">
+                <li>Departure from Lviv</li>
+                <li>Manyava Hermitage</li>
+                <li>Manyava waterfall</li>
+                <li>Arrival to Bukovel</li>
+                <li>Check-in</li>
+                <li>Dinner</li>
+                <li>Evening by the fireplace</li>
+              </ul>
+            </div>
+          </li>
+          <li class="swiper-slide more-details-item">
+            <div class="more-details-wrapper day2">
+              <h3 class="more-details-title">Ski tour to Bukovel</h3>
+              <button type="button" class="more-details-close-btn">
+                <svg class="icon-close-modal" width="24" height="24"></svg>
+              </button>
+              <p class="more-details-text">2 day</p>
+              <ul class="day-list list">
+                <li>Breakfast</li>
+                <li>Recreation</li>
+                <li>Lunch</li>
+                <li>Reacretion</li>
+                <li>Dinner</li>
+                <li>Vacation</li>
+              </ul>
+            </div>
+          </li>
+          <li class="swiper-slide more-details-item">
+            <div class="more-details-wrapper day3">
+              <h3 class="more-details-title">Ski tour to Bukovel</h3>
+              <button type="button" class="more-details-close-btn">
+                <svg class="icon-close-modal" width="24" height="24"></svg>
+              </button>
+              <p class="more-details-text">3 day</p>
+              <ul class="day-list list">
+                <li>Breakfast</li>
+                <li>A walk around Bukovel</li>
+                <li>Dinner</li>
+                <li>Recreation</li>
+                <li>Sauna</li>
+                <li>Dinner</li>
+              </ul>
+            </div>
+          </li>
+          <li class="swiper-slide more-details-item">
+            <div class="more-details-wrapper day3">
+              <h3 class="more-details-title">Ski tour to Bukovel</h3>
+              <button type="button" class="more-details-close-btn">
+                <svg class="icon-close-modal" width="24" height="24"></svg>
+              </button>
+              <p class="more-details-text">4 day</p>
+              <ul class="day-list list">
+                <li>Breakfast</li>
+                <li>Recreation</li>
+                <li>Dinner</li>
+                <li>Departure from Bukovel</li>
+                <li>Arrival in Lviv</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="more-details-wrapper-down">
+        <p class="more-details-price">UAH 7,499/person</p>
+        <button class="hero-button" type="button">BOOK A TOUR</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="modal-choice carpathians is-hidden" id="modal-choice">
+  <div class="backdrop">
+    <div class="modal-container container">
+      <div class="swiper">
+        <ul class="swiper-wrapper more-details-list list">
+          <li class="swiper-slide more-details-item">
+            <div class="more-details-wrapper day1">
+              <h3 class="more-details-title">Week in Carpathians</h3>
+              <button type="button" class="more-details-close-btn">
+                <svg class="icon-close-modal" width="24" height="24">
+                  <use href="../img/sprite.svg#icon-close">x</use>
+                </svg>
+              </button>
+              <p class="more-details-text">1 day</p>
+              <ul class="day-list list">
+                <li>Departure from Lviv</li>
+                <li>Dovbush rocks</li>
+                <li>Lunch</li>
+                <li>Tustan fortress</li>
+                <li>Check-in</li>
+                <li>Dinner</li>
+              </ul>
+            </div>
+          </li>
+          <li class="swiper-slide more-details-item">
+            <div class="more-details-wrapper day2">
+              <h3 class="more-details-title">Week in Carpathians</h3>
+              <button type="button" class="more-details-close-btn">
+                <svg class="icon-close-modal" width="24" height="24"></svg>
+              </button>
+              <p class="more-details-text">2 day</p>
+              <ul class="day-list list">
+                <li>Breakfast</li>
+                <li>Lake Synevyr</li>
+                <li>Ecopark "Valley of Wolves"</li>
+                <li>Lunch</li>
+                <li>Excursion to Kolochava</li>
+                <li>Dinner</li>
+              </ul>
+            </div>
+          </li>
+          <li class="swiper-slide more-details-item">
+            <div class="more-details-wrapper day4">
+              <h3 class="more-details-title">Week in Carpathians</h3>
+              <button type="button" class="more-details-close-btn">
+                <svg class="icon-close-modal" width="24" height="24"></svg>
+              </button>
+              <p class="more-details-text">3 day</p>
+              <ul class="day-list list">
+                <li>Breakfast</li>
+                <li>Shipit waterfall</li>
+                <li>Gimba mountain</li>
+                <li>Recreation</li>
+                <li>Dinner</li>
+              </ul>
+            </div>
+          </li>
+          <li class="swiper-slide more-details-item">
+            <div class="more-details-wrapper day3">
+              <h3 class="more-details-title">Week in Carpathians</h3>
+              <button type="button" class="more-details-close-btn">
+                <svg class="icon-close-modal" width="24" height="24"></svg>
+              </button>
+              <p class="more-details-text">4 day</p>
+              <ul class="day-list list">
+                <li>Breakfast</li>
+                <li>Deer farm in Iza</li>
+                <li>Warm waters in Velyatino</li>
+                <li>Departure from Bukovel</li>
+                <li>Geographical center of Europe</li>
+                <li>Dinner</li>
+              </ul>
+            </div>
+          </li>
+          <li class="swiper-slide more-details-item">
+            <div class="more-details-wrapper day5">
+              <h3 class="more-details-title">Week in Carpathians</h3>
+              <button type="button" class="more-details-close-btn">
+                <svg class="icon-close-modal" width="24" height="24"></svg>
+              </button>
+              <p class="more-details-text">5 day</p>
+              <ul class="day-list list">
+                <li>Breakfast</li>
+                <li>Ascent to Hoverla</li>
+                <li>Reacreation</li>
+                <li>Dinner</li>
+              </ul>
+            </div>
+          </li>
+          <li class="swiper-slide more-details-item">
+            <div class="more-details-wrapper day6">
+              <h3 class="more-details-title">Week in Carpathians</h3>
+              <button type="button" class="more-details-close-btn">
+                <svg class="icon-close-modal" width="24" height="24"></svg>
+              </button>
+              <p class="more-details-text">6 day</p>
+              <ul class="day-list list">
+                <li>Breakfast</li>
+                <li>Hut-museum from the "Shadows of Forgotten Ancestors"</li>
+                <li>Lunch</li>
+                <li>Rafting of free time</li>
+                <li>Dinner</li>
+              </ul>
+            </div>
+          </li>
+          <li class="swiper-slide more-details-item">
+            <div class="more-details-wrapper day7">
+              <h3 class="more-details-title">Week in Carpathians</h3>
+              <button type="button" class="more-details-close-btn">
+                <svg class="icon-close-modal" width="24" height="24"></svg>
+              </button>
+              <p class="more-details-text">7 day</p>
+              <ul class="day-list list">
+                <li>Breakfast</li>
+                <li>Dovbush trail</li>
+                <li>Souvenir fair</li>
+                <li>Lunch</li>
+                <li>Probij waterfall</li>
+                <li>Return to Lviv</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="more-details-wrapper-down">
+        <p class="more-details-price">UAH 9,999/person</p>
         <button class="hero-button" type="button">BOOK A TOUR</button>
       </div>
     </div>
