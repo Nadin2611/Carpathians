@@ -9,14 +9,14 @@
     <script type="module" crossorigin src="/Carpathians/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/Carpathians/assets/vendor-5f99528f.js">
     <link rel="stylesheet" href="/Carpathians/assets/vendor-9f55d67b.css">
-    <link rel="stylesheet" href="/Carpathians/assets/index-91050285.css">
+    <link rel="stylesheet" href="/Carpathians/assets/index-d6235f0a.css">
   </head>
   <body>
     <header class="header">
   <div class="header-container container">
     <a class="header-logo-link link" href="./index.html" title="Carpathians">
       <svg class="header-logo-icon" width="40" height="40">
-        <use href="/Carpathians/assets/sprite-461814ce.svg#icon-logo"></use>
+        <use href="/Carpathians/assets/sprite-dc2aadd8.svg#icon-logo"></use>
       </svg>
     </a>
     <nav class="header-nav is-hidden">
@@ -47,7 +47,7 @@
             rel="noopener noreferrer"
           >
             <svg class="header-social-icon" width="40" height="40">
-              <use href="/Carpathians/assets/sprite-461814ce.svg#icon-telegram"></use>
+              <use href="/Carpathians/assets/sprite-dc2aadd8.svg#icon-telegram"></use>
             </svg>
           </a>
         </li>
@@ -60,7 +60,7 @@
             rel="noopener noreferrer"
           >
             <svg class="header-social-icon" width="40" height="40">
-              <use href="/Carpathians/assets/sprite-461814ce.svg#icon-instagram"></use>
+              <use href="/Carpathians/assets/sprite-dc2aadd8.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
@@ -73,7 +73,7 @@
             rel="noopener noreferrer"
           >
             <svg class="header-social-icon" width="40" height="40">
-              <use href="/Carpathians/assets/sprite-461814ce.svg#icon-facebook"></use>
+              <use href="/Carpathians/assets/sprite-dc2aadd8.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
@@ -92,12 +92,14 @@
     <main>
       <section class="hero">
   <div class="hero-container container">
-    <h1 class="hero-title">TOURS TO THE CARPATHIANS FROM LVIV</h1>
+    <h1 class="hero-title" id="hero">TOURS TO THE CARPATHIANS FROM LVIV</h1>
     <p class="hero-text">
       Journeys to the very heart of the Carpathians for those who want a real
       reboot
     </p>
-    <button class="hero-button" type="button">BOOK A TOUR</button>
+    <button class="hero-button hero-modal-button" type="button">
+      BOOK A TOUR
+    </button>
   </div>
 </section>
 
@@ -259,9 +261,13 @@
             going and seeing everything with your own eyes. Everything is
             organized at the highest level.
           </p>
-          <button class="reviews-button" type="button">
+          <button
+            class="reviews-button"
+            type="button"
+            title="Look at the photo"
+          >
             <svg class="reviews-svg" width="32" height="32">
-              <use href="/Carpathians/assets/sprite-461814ce.svg#icon-round"></use>
+              <use href="/Carpathians/assets/sprite-dc2aadd8.svg#icon-round"></use>
             </svg>
           </button>
         </div>
@@ -306,9 +312,13 @@
             told interesting facts about the area and customs throughout the
             tour.
           </p>
-          <button class="reviews-button" type="button">
+          <button
+            class="reviews-button"
+            type="button"
+            title="Look at the photo"
+          >
             <svg class="reviews-svg" width="32" height="32">
-              <use href="/Carpathians/assets/sprite-461814ce.svg#icon-round"></use>
+              <use href="/Carpathians/assets/sprite-dc2aadd8.svg#icon-round"></use>
             </svg>
           </button>
         </div>
@@ -355,9 +365,13 @@
             interesting stories, selection of a route for a comfortable ascent,
             motivation and support.
           </p>
-          <button class="reviews-button" type="button">
+          <button
+            class="reviews-button"
+            type="button"
+            title="Look at the photo"
+          >
             <svg class="reviews-svg" width="32" height="32">
-              <use href="/Carpathians/assets/sprite-461814ce.svg#icon-round"></use>
+              <use href="/Carpathians/assets/sprite-dc2aadd8.svg#icon-round"></use>
             </svg>
           </button>
         </div>
@@ -565,18 +579,24 @@
     <div class="questions-wrapper">
       <h2 class="questions-title">Do you have any questions?</h2>
       <p class="questions-text">
-        You can leave your questions here and our manager will call you back
-        within 10 minutes
+        You can leave your questions here and our manager will call you back
+        within 10 minutes
       </p>
       <form class="questions-form">
         <label class="form-label"
-          ><input type="text" name="username" placeholder="Your name*" required
+          ><input
+            type="text"
+            name="username"
+            placeholder="Your name*"
+            pattern="[a-zA-Zа-яА-ЯІіЇїЄє ]+(([' \-][a-zA-Zа-яА-ЯІіЇїЄє ])?[a-zA-Zа-яА-ЯІіЇїЄє])+$"
+            required
         /></label>
         <label class="form-label"
           ><input
             type="tel"
             name="userphone"
             placeholder="Phone number*"
+            pattern="\+?[0-9\s\-\(\)]+"
             required
         /></label>
         <label class="form-label"
@@ -606,7 +626,7 @@
             href="https://maps.app.goo.gl/iNgmkoacyuW4Mb1Y7"
           >
             <svg class="footer-icon" width="32" height="32">
-              <use href="/Carpathians/assets/sprite-461814ce.svg#icon-place"></use>
+              <use href="/Carpathians/assets/sprite-dc2aadd8.svg#icon-place"></use>
             </svg>
             <span>Lviv, st Dorosheko, 44 k</span>
           </a>
@@ -618,7 +638,7 @@
             href="tel:+380971626790"
           >
             <svg class="footer-icon" width="32" height="32">
-              <use href="/Carpathians/assets/sprite-461814ce.svg#icon-phone"></use>
+              <use href="/Carpathians/assets/sprite-dc2aadd8.svg#icon-phone"></use>
             </svg>
             <span>+38 (097) 162-67-90</span></a
           >
@@ -630,7 +650,7 @@
             href="mailto:mandrykarpaty@gmail.com"
           >
             <svg class="footer-icon" width="32" height="32">
-              <use href="/Carpathians/assets/sprite-461814ce.svg#icon-email"></use>
+              <use href="/Carpathians/assets/sprite-dc2aadd8.svg#icon-email"></use>
             </svg>
             <span>mandrykarpaty@gmail.com</span>
           </a>
@@ -646,7 +666,7 @@
             rel="noopener noreferrer"
           >
             <svg class="footer-social-icon" width="40" height="40">
-              <use href="/Carpathians/assets/sprite-461814ce.svg#icon-telegram"></use>
+              <use href="/Carpathians/assets/sprite-dc2aadd8.svg#icon-telegram"></use>
             </svg>
           </a>
         </li>
@@ -659,7 +679,7 @@
             rel="noopener noreferrer"
           >
             <svg class="footer-social-icon" width="40" height="40">
-              <use href="/Carpathians/assets/sprite-461814ce.svg#icon-instagram"></use>
+              <use href="/Carpathians/assets/sprite-dc2aadd8.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
@@ -672,14 +692,14 @@
             rel="noopener noreferrer"
           >
             <svg class="footer-social-icon" width="40" height="40">
-              <use href="/Carpathians/assets/sprite-461814ce.svg#icon-facebook"></use>
+              <use href="/Carpathians/assets/sprite-dc2aadd8.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
       </ul>
       <p class="footer-text">
         <svg class="footer-icon" width="16" height="16">
-          <use href="/Carpathians/assets/sprite-461814ce.svg#icon-copyright"></use>
+          <use href="/Carpathians/assets/sprite-dc2aadd8.svg#icon-copyright"></use>
         </svg>
         Created by LelekaSoft
       </p>
@@ -688,45 +708,84 @@
 </footer>
 
 
-    <div class="modal-book">
-  <button class="modal-button" type="button">
-    <svg class="modal-btn-close" width="30" height="30">
-      <use href="/Carpathians/assets/sprite-461814ce.svg#icon-close"></use>
-    </svg>
-  </button>
-  <h2>Book a tour</h2>
-  <p>
-    You can leave your application here and our manager will call you within 10
-    minutes
-  </p>
-  <form class="modal-form">
-    <label for=""
-      ><input
-        type="text"
-        name="username"
-        placeholder="Your name*"
-        required /></label
-    ><label for=""
-      ><input
-        type="tel"
-        name="userphone"
-        placeholder="Phone number*"
-        required /></label
-    ><label for=""
-      ><input type="checkbox" name="tour" value="sports" checked />Ascent
-      to Hoverla</label
-    ><label for=""
-      ><input type="checkbox" name="tour" value="sports" />Ski tour to
-      Bukovel</label
-    ><label for=""
-      ><input type="checkbox" name="tour" value="sports" />Week in
-      Carpathians</label
-    >
-    <button type="button">CALL ME</button>
-  </form>
+    <div class="modal-book is-hidden">
+  <div class="backdrop">
+    <div class="modal-book-container container">
+      <button class="modal-button" type="button" title="Close">
+        <svg class="modal-btn-close" width="30" height="30">
+          <use href="/Carpathians/assets/sprite-dc2aadd8.svg#icon-close"></use>
+        </svg>
+      </button>
+      <h2 class="modal-book-title">Book a tour</h2>
+      <p class="modal-book-text">
+        You can leave your application here <br />
+        and our manager will call you <br />within 10 minutes
+      </p>
+      <form class="modal-book-form">
+        <div class="input-block">
+          <label for=""
+            ><input
+              type="text"
+              name="username"
+              placeholder="Your name*"
+              pattern="[a-zA-Zа-яА-ЯІіЇїЄє ]+(([' \-][a-zA-Zа-яА-ЯІіЇїЄє ])?[a-zA-Zа-яА-ЯІіЇїЄє])+$"
+              required /></label
+          ><label for=""
+            ><input
+              type="tel"
+              name="userphone"
+              placeholder="Phone number*"
+              pattern="\+?[0-9\s\-\(\)]+"
+              required
+          /></label>
+        </div>
+        <div class="checkbox-block">
+          <input
+            type="checkbox"
+            class="input-check is-hidden"
+            name="tour"
+            id="hoverla"
+            value="tour-hoverla"
+            checked
+          /><label for="hoverla"
+            ><span class="name-tour">
+              <svg class="check-icon" width="20" height="20">
+                <use href="../img/sprite.svg#icon-check"></use>
+              </svg> </span
+            >Ascent to Hoverla</label
+          ><input
+            type="checkbox"
+            class="input-check is-hidden"
+            name="tour"
+            id="bukovel"
+            value="tour-bukovel"
+          /><label for="bukovel"
+            ><span class="name-tour">
+              <svg class="check-icon" width="20" height="20">
+                <use href="../img/sprite.svg#icon-check"></use>
+              </svg> </span
+            >Ski tour to Bukovel</label
+          ><input
+            type="checkbox"
+            class="input-check is-hidden"
+            name="tour"
+            id="carpathians"
+            value="tour-carpathians"
+          /><label for="carpathians"
+            ><span class="name-tour">
+              <svg class="check-icon" width="20" height="20">
+                <use href="../img/sprite.svg#icon-check"></use>
+              </svg> </span
+            >Week in Carpathians</label
+          >
+        </div>
+        <button class="modal-book-button" type="submit">CALL ME</button>
+      </form>
+    </div>
+  </div>
 </div>
 
-    <section class="modal-choice hoverla is-hidden" id="modal-choice-bukovel">
+    <div class="modal-choice hoverla is-hidden">
   <div class="backdrop">
     <div class="modal-container container">
       <div class="swiper">
@@ -734,9 +793,13 @@
           <li class="swiper-slide more-details-item">
             <div class="more-details-wrapper hoverla day1">
               <h3 class="more-details-title">Ascent to Hoverla</h3>
-              <button type="button" class="more-details-close-btn">
+              <button
+                type="button"
+                class="more-details-close-btn"
+                title="Close"
+              >
                 <svg class="icon-close-modal" width="24" height="24">
-                  <use href="/Carpathians/assets/sprite-461814ce.svg#icon-close">x</use>
+                  <use href="/Carpathians/assets/sprite-dc2aadd8.svg#icon-close">x</use>
                 </svg>
               </button>
               <p class="more-details-text">1 day</p>
@@ -754,7 +817,11 @@
           <li class="swiper-slide more-details-item">
             <div class="more-details-wrapper hoverla day2">
               <h3 class="more-details-title">Ascent to Hoverla</h3>
-              <button type="button" class="more-details-close-btn">
+              <button
+                type="button"
+                class="more-details-close-btn"
+                title="Close"
+              >
                 <svg class="icon-close-modal" width="24" height="24"></svg>
               </button>
               <p class="more-details-text">2 day</p>
@@ -771,7 +838,11 @@
           <li class="swiper-slide more-details-item">
             <div class="more-details-wrapper hoverla day3">
               <h3 class="more-details-title">Ascent to Hoverla</h3>
-              <button type="button" class="more-details-close-btn">
+              <button
+                type="button"
+                class="more-details-close-btn"
+                title="Close"
+              >
                 <svg class="icon-close-modal" width="24" height="24"></svg>
               </button>
               <p class="more-details-text">3 day</p>
@@ -789,13 +860,13 @@
       </div>
       <div class="more-details-wrapper-down">
         <p class="more-details-price">UAH 4,499/person</p>
-        <button class="hero-button" type="button">BOOK A TOUR</button>
+        <a href="#hero" class="hero-button tours-button">BOOK A TOUR</a>
       </div>
     </div>
   </div>
-</section>
+</div>
 
-<section class="modal-choice bukovel is-hidden" id="modal-choice">
+<div class="modal-choice bukovel is-hidden">
   <div class="backdrop">
     <div class="modal-container container">
       <div class="swiper">
@@ -803,9 +874,13 @@
           <li class="swiper-slide more-details-item">
             <div class="more-details-wrapper bukovel day1">
               <h3 class="more-details-title">Ski tour to Bukovel</h3>
-              <button type="button" class="more-details-close-btn">
+              <button
+                type="button"
+                class="more-details-close-btn"
+                title="Close"
+              >
                 <svg class="icon-close-modal" width="24" height="24">
-                  <use href="/Carpathians/assets/sprite-461814ce.svg#icon-close">x</use>
+                  <use href="/Carpathians/assets/sprite-dc2aadd8.svg#icon-close">x</use>
                 </svg>
               </button>
               <p class="more-details-text">1 day</p>
@@ -823,7 +898,11 @@
           <li class="swiper-slide more-details-item">
             <div class="more-details-wrapper bukovel day2">
               <h3 class="more-details-title">Ski tour to Bukovel</h3>
-              <button type="button" class="more-details-close-btn">
+              <button
+                type="button"
+                class="more-details-close-btn"
+                title="Close"
+              >
                 <svg class="icon-close-modal" width="24" height="24"></svg>
               </button>
               <p class="more-details-text">2 day</p>
@@ -840,7 +919,11 @@
           <li class="swiper-slide more-details-item">
             <div class="more-details-wrapper bukovel day3">
               <h3 class="more-details-title">Ski tour to Bukovel</h3>
-              <button type="button" class="more-details-close-btn">
+              <button
+                type="button"
+                class="more-details-close-btn"
+                title="Close"
+              >
                 <svg class="icon-close-modal" width="24" height="24"></svg>
               </button>
               <p class="more-details-text">3 day</p>
@@ -857,7 +940,11 @@
           <li class="swiper-slide more-details-item">
             <div class="more-details-wrapper bukovel day4">
               <h3 class="more-details-title">Ski tour to Bukovel</h3>
-              <button type="button" class="more-details-close-btn">
+              <button
+                type="button"
+                class="more-details-close-btn"
+                title="Close"
+              >
                 <svg class="icon-close-modal" width="24" height="24"></svg>
               </button>
               <p class="more-details-text">4 day</p>
@@ -875,13 +962,13 @@
       </div>
       <div class="more-details-wrapper-down">
         <p class="more-details-price">UAH 7,499/person</p>
-        <button class="hero-button" type="button">BOOK A TOUR</button>
+        <a href="#hero" class="hero-button tours-button">BOOK A TOUR</a>
       </div>
     </div>
   </div>
-</section>
+</div>
 
-<section class="modal-choice carpathians is-hidden" id="modal-choice">
+<div class="modal-choice carpathians is-hidden">
   <div class="backdrop">
     <div class="modal-container container">
       <div class="swiper">
@@ -889,9 +976,13 @@
           <li class="swiper-slide more-details-item">
             <div class="more-details-wrapper carpathians day1">
               <h3 class="more-details-title">Week in Carpathians</h3>
-              <button type="button" class="more-details-close-btn">
+              <button
+                type="button"
+                class="more-details-close-btn"
+                title="Close"
+              >
                 <svg class="icon-close-modal" width="24" height="24">
-                  <use href="/Carpathians/assets/sprite-461814ce.svg#icon-close">x</use>
+                  <use href="/Carpathians/assets/sprite-dc2aadd8.svg#icon-close">x</use>
                 </svg>
               </button>
               <p class="more-details-text">1 day</p>
@@ -908,7 +999,11 @@
           <li class="swiper-slide more-details-item">
             <div class="more-details-wrapper carpathians day2">
               <h3 class="more-details-title">Week in Carpathians</h3>
-              <button type="button" class="more-details-close-btn">
+              <button
+                type="button"
+                class="more-details-close-btn"
+                title="Close"
+              >
                 <svg class="icon-close-modal" width="24" height="24"></svg>
               </button>
               <p class="more-details-text">2 day</p>
@@ -925,7 +1020,11 @@
           <li class="swiper-slide more-details-item">
             <div class="more-details-wrapper carpathians day3">
               <h3 class="more-details-title">Week in Carpathians</h3>
-              <button type="button" class="more-details-close-btn">
+              <button
+                type="button"
+                class="more-details-close-btn"
+                title="Close"
+              >
                 <svg class="icon-close-modal" width="24" height="24"></svg>
               </button>
               <p class="more-details-text">3 day</p>
@@ -941,7 +1040,11 @@
           <li class="swiper-slide more-details-item">
             <div class="more-details-wrapper carpathians day4">
               <h3 class="more-details-title">Week in Carpathians</h3>
-              <button type="button" class="more-details-close-btn">
+              <button
+                type="button"
+                class="more-details-close-btn"
+                title="Close"
+              >
                 <svg class="icon-close-modal" width="24" height="24"></svg>
               </button>
               <p class="more-details-text">4 day</p>
@@ -958,7 +1061,11 @@
           <li class="swiper-slide more-details-item">
             <div class="more-details-wrapper carpathians day5">
               <h3 class="more-details-title">Week in Carpathians</h3>
-              <button type="button" class="more-details-close-btn">
+              <button
+                type="button"
+                class="more-details-close-btn"
+                title="Close"
+              >
                 <svg class="icon-close-modal" width="24" height="24"></svg>
               </button>
               <p class="more-details-text">5 day</p>
@@ -973,7 +1080,11 @@
           <li class="swiper-slide more-details-item">
             <div class="more-details-wrapper carpathians day6">
               <h3 class="more-details-title">Week in Carpathians</h3>
-              <button type="button" class="more-details-close-btn">
+              <button
+                type="button"
+                class="more-details-close-btn"
+                title="Close"
+              >
                 <svg class="icon-close-modal" width="24" height="24"></svg>
               </button>
               <p class="more-details-text">6 day</p>
@@ -989,7 +1100,11 @@
           <li class="swiper-slide more-details-item">
             <div class="more-details-wrapper carpathians day7">
               <h3 class="more-details-title">Week in Carpathians</h3>
-              <button type="button" class="more-details-close-btn">
+              <button
+                type="button"
+                class="more-details-close-btn"
+                title="Close"
+              >
                 <svg class="icon-close-modal" width="24" height="24"></svg>
               </button>
               <p class="more-details-text">7 day</p>
@@ -1008,11 +1123,11 @@
       </div>
       <div class="more-details-wrapper-down">
         <p class="more-details-price">UAH 9,999/person</p>
-        <button class="hero-button" type="button">BOOK A TOUR</button>
+        <a href="#hero" class="hero-button tours-button">BOOK A TOUR</a>
       </div>
     </div>
   </div>
-</section>
+</div>
 
 
     
