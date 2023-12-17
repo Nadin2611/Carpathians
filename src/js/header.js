@@ -1,6 +1,7 @@
 import { openMenu, closeMenu, burgerEl, menuEl } from './burger';
 
 const navItems = document.querySelectorAll('.header-nav-item');
+const closeBtn = document.querySelector('.close-button');
 
 burgerEl.addEventListener('click', () => {
   if (menuEl.classList.contains('is-hidden')) {
