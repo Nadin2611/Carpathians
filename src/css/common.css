@@ -27,9 +27,10 @@ body {
 }
 
 .container {
+  min-width: 320px;
+  max-width: 334px;
   margin: 0 auto;
-  max-width: 335px;
-  padding: 0 32px;
+  padding: 0 10px;
 }
 
 .is-hidden {
@@ -52,10 +53,17 @@ button {
 img {
   display: block;
 }
-/* 
+
+@media screen and (min-width: 335px) {
+  .container {
+    max-width: 335px;
+  }
+}
+
 @media screen and (min-width: 375px) {
   .container {
     max-width: 375px;
+    padding: 0 32px;
   }
 }
 
@@ -71,4 +79,4 @@ img {
     max-width: 1440px;
     padding: 0 135px;
   }
-} */
+}

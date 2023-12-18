@@ -15,7 +15,8 @@
   flex-direction: column;
   margin-top: 28px;
   gap: 4px;
-  max-width: 311px;
+
+  /* max-width: 311px; */
 }
 
 .about-text {
