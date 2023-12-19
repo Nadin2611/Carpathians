@@ -64,8 +64,7 @@
 }
 
 .footer-text {
-  color: var(--primary-grey);
-  /* Text_mobile */
+  color: var(--primary-gray);
   font-family: Manrope;
   font-size: 16px;
   font-style: normal;

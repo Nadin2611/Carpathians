@@ -1,7 +1,9 @@
 import './js/header';
 import './js/burger';
+import './js/questions';
 import './js/modal-choice';
 import './js/modal-book';
+import './js/scroll-up';
 
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';

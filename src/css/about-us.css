@@ -1,5 +1,6 @@
 .about-us {
   padding-top: 52px;
+  margin: 0 auto;
 }
 .about-container {
 }
@@ -15,8 +16,7 @@
   flex-direction: column;
   margin-top: 28px;
   gap: 4px;
-
-  /* max-width: 311px; */
+  max-width: 311px;
 }
 
 .about-text {

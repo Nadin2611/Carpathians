@@ -10,8 +10,7 @@
 .hero-title {
   color: var(--primary-light);
   text-align: center;
-  font-size: 36px;
-  /* font-size: 40px; */
+  font-size: 40px;
   font-weight: 400;
   line-height: normal;
   padding-top: 188px;
@@ -30,6 +29,7 @@
   max-width: 300px;
   margin: 0 auto;
 }
+
 .hero-button {
   display: flex;
   min-width: 250px;
@@ -47,4 +47,23 @@
   font-weight: 500;
   line-height: normal;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 375px) {
+}
+
+@media screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 68px;
+    max-width: 728px;
+    padding-top: 180px;
+  }
+
+  .hero-text {
+    font-size: 20px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    max-width: 470px;
+    margin: 0 auto;
+  }
 }
