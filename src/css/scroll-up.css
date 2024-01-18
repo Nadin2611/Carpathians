@@ -52,8 +52,8 @@
   font-size: 20px;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 480px) {
   .scroll-up {
-    right: 70px;
+    right: 20px;
   }
 }

@@ -5,8 +5,7 @@
   background-color: rgba(0, 0, 0, 0.8);
   top: 0;
   left: 0;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: auto;
   transition: all 0.8s ease 0s;
   z-index: 998;
 }
@@ -113,6 +112,7 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .more-details-wrapper.hoverla.day2 {
   background-image: linear-gradient(
       0deg,
@@ -124,6 +124,7 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .more-details-wrapper.hoverla.day3 {
   background-image: linear-gradient(
       0deg,
